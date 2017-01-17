@@ -12,14 +12,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        var assets = [Asset]()
+        
+        for index in 1..<11 {
+            assets.append(ImageAsset.init(imageUrl: URL.init(string: Bundle.main.path(forResource: "frame\(index)", ofType: "JPG")!)!))
+        }
+        
+        
+        let videoBuilder = VideoBuilder()
+        videoBuilder.createVideo(fromAssets: assets)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
