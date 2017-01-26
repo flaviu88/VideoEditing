@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         
         
         let videoBuilder = VideoBuilder()
-        videoBuilder.createVideo(fromAssets: assets)
+        videoBuilder.createVideo(fromAssets: assets, configuration: VideoBuilderConfiguration())
     }
 }
 
