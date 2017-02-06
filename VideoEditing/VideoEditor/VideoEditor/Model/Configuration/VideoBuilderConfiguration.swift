@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Resolution{
+struct Resolution{
     var width: Int
     var height : Int
     
@@ -18,12 +18,12 @@ class Resolution{
     }
 }
 
-enum VideoSize{
+enum VideoSize {
     case HD
     case FullHD
     case UHD4K
     
-    func values() -> (widht: Int, height: Int) {
+    func size() -> (width: Int, height: Int) {
         switch self {
         case .HD:
             return (1280, 720)
@@ -32,14 +32,12 @@ enum VideoSize{
         case .UHD4K:
             return (3840,2160)
         }
-        
-        
     }
 }
 
-class VideoBuilderConfiguration: NSObject {
+class VideoBuilderConfiguration {
 
-    var defaultAssetDisplayTime: NSNumber = 3
-    var defaultTransitionTime: NSNumber = 1
+    var defaultAssetDisplayTime: Float = 3
+    var defaultTransitionTime: Float = 1
     var videoOutputSize : VideoSize = .FullHD
 }
