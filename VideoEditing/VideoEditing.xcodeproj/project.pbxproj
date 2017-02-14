@@ -43,6 +43,7 @@
 		153B2A501E291BB000FF0211 /* frame10.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 153B2A3B1E291BB000FF0211 /* frame10.JPG */; };
 		153B2A511E291BB000FF0211 /* frame11.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 153B2A3C1E291BB000FF0211 /* frame11.JPG */; };
 		153B2A521E291BB000FF0211 /* frame11.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 153B2A3C1E291BB000FF0211 /* frame11.JPG */; };
+		15A2119C1E53366F006421B6 /* Happy-electronic-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 15A2119B1E53366F006421B6 /* Happy-electronic-music.mp3 */; };
 		15AA0E961E39F65F009CF649 /* VideoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA0E951E39F65F009CF649 /* VideoAsset.swift */; };
 		15AA0E971E39F65F009CF649 /* VideoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA0E951E39F65F009CF649 /* VideoAsset.swift */; };
 		15AA0E9A1E39FC91009CF649 /* ColorFilterOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA0E991E39FC91009CF649 /* ColorFilterOverlay.swift */; };
@@ -102,6 +103,7 @@
 		153B2A3A1E291BB000FF0211 /* frame9.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame9.JPG; sourceTree = "<group>"; };
 		153B2A3B1E291BB000FF0211 /* frame10.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame10.JPG; sourceTree = "<group>"; };
 		153B2A3C1E291BB000FF0211 /* frame11.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame11.JPG; sourceTree = "<group>"; };
+		15A2119B1E53366F006421B6 /* Happy-electronic-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Happy-electronic-music.mp3"; sourceTree = "<group>"; };
 		15AA0E951E39F65F009CF649 /* VideoAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoAsset.swift; sourceTree = "<group>"; };
 		15AA0E991E39FC91009CF649 /* ColorFilterOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorFilterOverlay.swift; sourceTree = "<group>"; };
 		15AA0E9C1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoBuilderConfiguration.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		153B2A311E291B4300FF0211 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				15A2119B1E53366F006421B6 /* Happy-electronic-music.mp3 */,
 				153B2A321E291BB000FF0211 /* frame1.JPG */,
 				153B2A331E291BB000FF0211 /* frame2.JPG */,
 				153B2A341E291BB000FF0211 /* frame3.JPG */,
@@ -364,6 +367,7 @@
 				153B2A3D1E291BB000FF0211 /* frame1.JPG in Resources */,
 				153B2A4D1E291BB000FF0211 /* frame9.JPG in Resources */,
 				153B2A491E291BB000FF0211 /* frame7.JPG in Resources */,
+				15A2119C1E53366F006421B6 /* Happy-electronic-music.mp3 in Resources */,
 				153B2A471E291BB000FF0211 /* frame6.JPG in Resources */,
 				1BCA2F091DE874430037AF13 /* Assets.xcassets in Resources */,
 				153B2A511E291BB000FF0211 /* frame11.JPG in Resources */,
