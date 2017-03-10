@@ -8,10 +8,15 @@
 
 import UIKit
 import AVFoundation
+import GPUImage
 
 class GPUVideoHandler : VideoBuilderInteface {
 
     func applyEffect(asset: Asset) -> AVAsset? {
+        //just for testing GPUImage integration
+        let image = UIImage.init()
+        let motionBlurFilter = MotionBlur()
+        let filteredImage = image.filterWithOperation(motionBlurFilter)
         return nil
     }
     

@@ -9,7 +9,7 @@
 import Foundation
 
 class Asset {
-    var overlay = [Overlay]()
+    var overlay : Overlay?
     var transitionAnimation : Transition?
     var animation : Animation?
 }
