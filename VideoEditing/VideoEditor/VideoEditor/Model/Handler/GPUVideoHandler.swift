@@ -11,11 +11,11 @@ import AVFoundation
 
 class GPUVideoHandler : VideoBuilderInteface {
 
-    func applyEffect(asset: Asset, overlay: Overlay) -> AVAsset? {
+    func applyEffect(asset: Asset) -> AVAsset? {
         return nil
     }
     
-    func createVideo(assets: AVAsset) -> String? {
+    func createVideo(assets: [AVAsset]) -> String? {
         return nil
     }
     

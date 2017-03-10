@@ -11,7 +11,7 @@ import AVFoundation
 
 protocol VideoBuilderInteface {
 
-    func applyEffect(asset: Asset, overlay: Overlay) -> AVAsset?
-    func createVideo(assets: AVAsset) -> String?
+    func applyEffect(asset: Asset) -> AVAsset?
+    func createVideo(assets: [AVAsset]) -> String?
     
 }
