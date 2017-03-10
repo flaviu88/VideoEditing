@@ -10,6 +10,8 @@ import Foundation
 
 class VideoBuilder{
 
+    var handler: VideoBuilderInteface?
+    
     func createVideo(fromAssets assets: [Asset], configuration: VideoBuilderConfiguration){
         
     }

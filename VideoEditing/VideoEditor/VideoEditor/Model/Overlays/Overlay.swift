@@ -8,6 +8,9 @@
 
 import Foundation
 
-class Overlay {
-    
+enum Overlay {
+    case motionBlur
+    case crop
+    case pixelate
+    case distortion
 }

@@ -45,10 +45,14 @@
 		153B2A521E291BB000FF0211 /* frame11.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 153B2A3C1E291BB000FF0211 /* frame11.JPG */; };
 		15AA0E961E39F65F009CF649 /* VideoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA0E951E39F65F009CF649 /* VideoAsset.swift */; };
 		15AA0E971E39F65F009CF649 /* VideoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA0E951E39F65F009CF649 /* VideoAsset.swift */; };
-		15AA0E9A1E39FC91009CF649 /* ColorFilterOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA0E991E39FC91009CF649 /* ColorFilterOverlay.swift */; };
-		15AA0E9B1E39FC91009CF649 /* ColorFilterOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA0E991E39FC91009CF649 /* ColorFilterOverlay.swift */; };
 		15AA0E9D1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA0E9C1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift */; };
 		15AA0E9E1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA0E9C1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift */; };
+		1BBA76881E72A02B00B2D37B /* VideoBuilderInteface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBA76871E72A02B00B2D37B /* VideoBuilderInteface.swift */; };
+		1BBA768B1E72A0D700B2D37B /* DDVideoHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBA768A1E72A0D700B2D37B /* DDVideoHandler.swift */; };
+		1BBA768D1E72A0E800B2D37B /* GPUVideoHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBA768C1E72A0E800B2D37B /* GPUVideoHandler.swift */; };
+		1BBA768E1E72A28200B2D37B /* DDVideoHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBA768A1E72A0D700B2D37B /* DDVideoHandler.swift */; };
+		1BBA768F1E72A28200B2D37B /* GPUVideoHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBA768C1E72A0E800B2D37B /* GPUVideoHandler.swift */; };
+		1BBA76901E72A28200B2D37B /* VideoBuilderInteface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBA76871E72A02B00B2D37B /* VideoBuilderInteface.swift */; };
 		1BCA2F021DE874430037AF13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA2F011DE874430037AF13 /* AppDelegate.swift */; };
 		1BCA2F041DE874430037AF13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA2F031DE874430037AF13 /* ViewController.swift */; };
 		1BCA2F071DE874430037AF13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCA2F051DE874430037AF13 /* Main.storyboard */; };
@@ -103,8 +107,10 @@
 		153B2A3B1E291BB000FF0211 /* frame10.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame10.JPG; sourceTree = "<group>"; };
 		153B2A3C1E291BB000FF0211 /* frame11.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame11.JPG; sourceTree = "<group>"; };
 		15AA0E951E39F65F009CF649 /* VideoAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoAsset.swift; sourceTree = "<group>"; };
-		15AA0E991E39FC91009CF649 /* ColorFilterOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorFilterOverlay.swift; sourceTree = "<group>"; };
 		15AA0E9C1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoBuilderConfiguration.swift; sourceTree = "<group>"; };
+		1BBA76871E72A02B00B2D37B /* VideoBuilderInteface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoBuilderInteface.swift; sourceTree = "<group>"; };
+		1BBA768A1E72A0D700B2D37B /* DDVideoHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDVideoHandler.swift; sourceTree = "<group>"; };
+		1BBA768C1E72A0E800B2D37B /* GPUVideoHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPUVideoHandler.swift; sourceTree = "<group>"; };
 		1BCA2EFE1DE874430037AF13 /* VideoEditing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoEditing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BCA2F011DE874430037AF13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BCA2F031DE874430037AF13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +153,8 @@
 		153B2A171E29177E00FF0211 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1BBA76891E72A0B500B2D37B /* Handler */,
+				1BBA76861E729F2E00B2D37B /* Interface */,
 				15AA0E981E39F6B9009CF649 /* Configuration */,
 				153B2A181E29177E00FF0211 /* Animations */,
 				153B2A1A1E29177E00FF0211 /* Assets */,
@@ -180,7 +188,6 @@
 			children = (
 				153B2A1E1E29177E00FF0211 /* Overlay.swift */,
 				153B2A1F1E29177E00FF0211 /* TextOverlay.swift */,
-				15AA0E991E39FC91009CF649 /* ColorFilterOverlay.swift */,
 			);
 			path = Overlays;
 			sourceTree = "<group>";
@@ -217,6 +224,23 @@
 				15AA0E9C1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		1BBA76861E729F2E00B2D37B /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				1BBA76871E72A02B00B2D37B /* VideoBuilderInteface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		1BBA76891E72A0B500B2D37B /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				1BBA768A1E72A0D700B2D37B /* DDVideoHandler.swift */,
+				1BBA768C1E72A0E800B2D37B /* GPUVideoHandler.swift */,
+			);
+			path = Handler;
 			sourceTree = "<group>";
 		};
 		1BCA2EF51DE874430037AF13 = {
@@ -399,12 +423,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BBA768E1E72A28200B2D37B /* DDVideoHandler.swift in Sources */,
+				1BBA768F1E72A28200B2D37B /* GPUVideoHandler.swift in Sources */,
+				1BBA76901E72A28200B2D37B /* VideoBuilderInteface.swift in Sources */,
 				15AA0E9D1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift in Sources */,
 				153B2A271E29177E00FF0211 /* ImageAsset.swift in Sources */,
 				1BCA2F041DE874430037AF13 /* ViewController.swift in Sources */,
 				15AA0E961E39F65F009CF649 /* VideoAsset.swift in Sources */,
 				153B2A231E29177E00FF0211 /* Animation.swift in Sources */,
-				15AA0E9A1E39FC91009CF649 /* ColorFilterOverlay.swift in Sources */,
 				153B2A2F1E29177E00FF0211 /* VideoBuilder.swift in Sources */,
 				153B2A251E29177E00FF0211 /* Asset.swift in Sources */,
 				153B2A291E29177E00FF0211 /* Overlay.swift in Sources */,
@@ -420,11 +446,13 @@
 			files = (
 				153B2A2E1E29177E00FF0211 /* Transition.swift in Sources */,
 				153B2A281E29177E00FF0211 /* ImageAsset.swift in Sources */,
-				15AA0E9B1E39FC91009CF649 /* ColorFilterOverlay.swift in Sources */,
+				1BBA76881E72A02B00B2D37B /* VideoBuilderInteface.swift in Sources */,
 				15AA0E971E39F65F009CF649 /* VideoAsset.swift in Sources */,
 				153B2A261E29177E00FF0211 /* Asset.swift in Sources */,
+				1BBA768D1E72A0E800B2D37B /* GPUVideoHandler.swift in Sources */,
 				153B2A301E29177E00FF0211 /* VideoBuilder.swift in Sources */,
 				15AA0E9E1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift in Sources */,
+				1BBA768B1E72A0D700B2D37B /* DDVideoHandler.swift in Sources */,
 				153B2A2A1E29177E00FF0211 /* Overlay.swift in Sources */,
 				153B2A2C1E29177E00FF0211 /* TextOverlay.swift in Sources */,
 				153B2A241E29177E00FF0211 /* Animation.swift in Sources */,
