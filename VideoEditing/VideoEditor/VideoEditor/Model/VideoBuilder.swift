@@ -11,7 +11,7 @@ import AVFoundation
 
 class VideoBuilder{
     
-    var handler: VideoBuilderInteface?
+    var handler: DDVideoHandler?
     
     func createVideo(fromAssets assets: [Asset], configuration: VideoBuilderConfiguration) -> String? {
         var avassetArray: [AVAsset] = []

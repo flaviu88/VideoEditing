@@ -19,7 +19,7 @@ class ImageAnimator {
     
     let settings: RenderSettings
     let videoWriter: VideoWriter
-    var images: [Asset]!
+    var images: [AVAsset]!
     
     var frameNum = 0
     
@@ -51,17 +51,22 @@ class ImageAnimator {
         videoWriter = VideoWriter(renderSettings: settings)
     }
     
-    func render(completion: @escaping ()->Void) {
+    func render() -> String {
         
         // The VideoWriter will fail if a file exists at the URL, so clear it out first.
         self.removeFileAtURL(fileURL: settings.outputURL)
         
+        guard settings.outputURL.absoluteString != nil else {
+            return ""
+        }
+        
         videoWriter.start()
         videoWriter.render(appendPixelBuffers: appendPixelBuffers) {
             self.saveToLibrary(videoURL: self.settings.outputURL)
-            completion()
         }
         
+        print("\nVideo path \(settings.outputURL.absoluteString!)\n")
+        return settings.outputURL.absoluteString!
     }
 
     // This is the callback function for VideoWriter.render()

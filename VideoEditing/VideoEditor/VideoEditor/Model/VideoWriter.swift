@@ -10,6 +10,7 @@ import Foundation
 import AVFoundation
 import UIKit
 
+
 class VideoWriter {
     
     let renderSettings: RenderSettings

@@ -63,10 +63,12 @@
 		1BCA2F1F1DE874CE0037AF13 /* VideoEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCA2F181DE874CE0037AF13 /* VideoEditor.framework */; };
 		1BCA2F201DE874CE0037AF13 /* VideoEditor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCA2F181DE874CE0037AF13 /* VideoEditor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E80E08BA1E72F7E700031728 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 15F6B74B1E72A6FD007EF4FE /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E80E08C71E72FF7800031728 /* RenderSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80E08C51E72FEA900031728 /* RenderSettings.swift */; };
+		E80E08C81E72FFA400031728 /* RenderSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80E08C51E72FEA900031728 /* RenderSettings.swift */; };
+		E80E08C91E72FFA600031728 /* ImageAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D2CE21E5B234B00B85A70 /* ImageAnimator.swift */; };
+		E80E08CA1E72FFA900031728 /* VideoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D2CDF1E5B233400B85A70 /* VideoWriter.swift */; };
 		E87D2CE01E5B233400B85A70 /* VideoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D2CDF1E5B233400B85A70 /* VideoWriter.swift */; };
-		E87D2CE11E5B233400B85A70 /* VideoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D2CDF1E5B233400B85A70 /* VideoWriter.swift */; };
 		E87D2CE31E5B234B00B85A70 /* ImageAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D2CE21E5B234B00B85A70 /* ImageAnimator.swift */; };
-		E87D2CE41E5B234B00B85A70 /* ImageAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D2CE21E5B234B00B85A70 /* ImageAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -630,6 +632,7 @@
 		1BCA2F181DE874CE0037AF13 /* VideoEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VideoEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BCA2F1A1DE874CE0037AF13 /* VideoEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoEditor.h; sourceTree = "<group>"; };
 		1BCA2F1B1DE874CE0037AF13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E80E08C51E72FEA900031728 /* RenderSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderSettings.swift; sourceTree = "<group>"; };
 		E87D2CDF1E5B233400B85A70 /* VideoWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoWriter.swift; sourceTree = "<group>"; };
 		E87D2CE21E5B234B00B85A70 /* ImageAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -664,6 +667,7 @@
 		153B2A171E29177E00FF0211 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E80E08C11E72FA3F00031728 /* DDVideoWriter */,
 				1BBA76891E72A0B500B2D37B /* Handler */,
 				1BBA76861E729F2E00B2D37B /* Interface */,
 				15AA0E981E39F6B9009CF649 /* Configuration */,
@@ -672,8 +676,6 @@
 				153B2A1D1E29177E00FF0211 /* Overlays */,
 				153B2A201E29177E00FF0211 /* Transitions */,
 				153B2A221E29177E00FF0211 /* VideoBuilder.swift */,
-				E87D2CDF1E5B233400B85A70 /* VideoWriter.swift */,
-				E87D2CE21E5B234B00B85A70 /* ImageAnimator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1402,6 +1404,16 @@
 			path = VideoEditor;
 			sourceTree = "<group>";
 		};
+		E80E08C11E72FA3F00031728 /* DDVideoWriter */ = {
+			isa = PBXGroup;
+			children = (
+				E87D2CDF1E5B233400B85A70 /* VideoWriter.swift */,
+				E87D2CE21E5B234B00B85A70 /* ImageAnimator.swift */,
+				E80E08C51E72FEA900031728 /* RenderSettings.swift */,
+			);
+			name = DDVideoWriter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1595,6 +1607,7 @@
 				E87D2CE31E5B234B00B85A70 /* ImageAnimator.swift in Sources */,
 				153B2A2B1E29177E00FF0211 /* TextOverlay.swift in Sources */,
 				153B2A2D1E29177E00FF0211 /* Transition.swift in Sources */,
+				E80E08C71E72FF7800031728 /* RenderSettings.swift in Sources */,
 				1BCA2F021DE874430037AF13 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1607,12 +1620,13 @@
 				153B2A281E29177E00FF0211 /* ImageAsset.swift in Sources */,
 				1BBA76881E72A02B00B2D37B /* VideoBuilderInteface.swift in Sources */,
 				15AA0E971E39F65F009CF649 /* VideoAsset.swift in Sources */,
-				E87D2CE41E5B234B00B85A70 /* ImageAnimator.swift in Sources */,
+				E80E08CA1E72FFA900031728 /* VideoWriter.swift in Sources */,
 				153B2A261E29177E00FF0211 /* Asset.swift in Sources */,
 				153B2A301E29177E00FF0211 /* VideoBuilder.swift in Sources */,
+				E80E08C91E72FFA600031728 /* ImageAnimator.swift in Sources */,
 				15AA0E9E1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift in Sources */,
-				E87D2CE11E5B233400B85A70 /* VideoWriter.swift in Sources */,
 				1BBA768B1E72A0D700B2D37B /* DDVideoHandler.swift in Sources */,
+				E80E08C81E72FFA400031728 /* RenderSettings.swift in Sources */,
 				153B2A2A1E29177E00FF0211 /* Overlay.swift in Sources */,
 				153B2A2C1E29177E00FF0211 /* TextOverlay.swift in Sources */,
 				153B2A241E29177E00FF0211 /* Animation.swift in Sources */,
