@@ -47,6 +47,7 @@
 		15AA0E971E39F65F009CF649 /* VideoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA0E951E39F65F009CF649 /* VideoAsset.swift */; };
 		15AA0E9D1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA0E9C1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift */; };
 		15AA0E9E1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA0E9C1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift */; };
+		15F6B74E1E72A735007EF4FE /* GPUImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15F6B74B1E72A6FD007EF4FE /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1BBA76881E72A02B00B2D37B /* VideoBuilderInteface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBA76871E72A02B00B2D37B /* VideoBuilderInteface.swift */; };
 		1BBA768B1E72A0D700B2D37B /* DDVideoHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBA768A1E72A0D700B2D37B /* DDVideoHandler.swift */; };
 		1BBA768D1E72A0E800B2D37B /* GPUVideoHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBA768C1E72A0E800B2D37B /* GPUVideoHandler.swift */; };
@@ -64,6 +65,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		15F6B7461E72A6FD007EF4FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15F6B56C1E72A6FC007EF4FE /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC6E7CAB1C39A9D8006DF678;
+			remoteInfo = GPUImage_macOS;
+		};
+		15F6B7481E72A6FD007EF4FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15F6B56C1E72A6FC007EF4FE /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC6E7CB51C39A9D8006DF678;
+			remoteInfo = GPUImageTests_macOS;
+		};
+		15F6B74A1E72A6FD007EF4FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15F6B56C1E72A6FC007EF4FE /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9E34E91E524A2200B8604F;
+			remoteInfo = GPUImage_iOS;
+		};
+		15F6B74C1E72A6FD007EF4FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15F6B56C1E72A6FC007EF4FE /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9E34F11E524A2200B8604F;
+			remoteInfo = GPUImageTests_iOS;
+		};
 		1BCA2F1D1DE874CE0037AF13 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1BCA2EF61DE874430037AF13 /* Project object */;
@@ -74,12 +103,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		15F6B1C41E72A649007EF4FE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1BCA2F241DE874CE0037AF13 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				15F6B74E1E72A735007EF4FE /* GPUImage.framework in Embed Frameworks */,
 				1BCA2F201DE874CE0037AF13 /* VideoEditor.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -108,6 +147,462 @@
 		153B2A3C1E291BB000FF0211 /* frame11.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame11.JPG; sourceTree = "<group>"; };
 		15AA0E951E39F65F009CF649 /* VideoAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoAsset.swift; sourceTree = "<group>"; };
 		15AA0E9C1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoBuilderConfiguration.swift; sourceTree = "<group>"; };
+		15F6B56A1E72A6FC007EF4FE /* compile-LinuxGL.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "compile-LinuxGL.sh"; sourceTree = "<group>"; };
+		15F6B56B1E72A6FC007EF4FE /* compile-LinuxRPi.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "compile-LinuxRPi.sh"; sourceTree = "<group>"; };
+		15F6B56C1E72A6FC007EF4FE /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = GPUImage.xcodeproj; sourceTree = "<group>"; };
+		15F6B56F1E72A6FC007EF4FE /* LinuxCompilationGenerator.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = LinuxCompilationGenerator.sh; sourceTree = "<group>"; };
+		15F6B5701E72A6FC007EF4FE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		15F6B5731E72A6FC007EF4FE /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		15F6B5741E72A6FC007EF4FE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		15F6B5751E72A6FC007EF4FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		15F6B5771E72A6FC007EF4FE /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		15F6B5781E72A6FC007EF4FE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		15F6B5791E72A6FC007EF4FE /* proto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = proto.h; sourceTree = "<group>"; };
+		15F6B57B1E72A6FC007EF4FE /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		15F6B57C1E72A6FC007EF4FE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		15F6B57E1E72A6FC007EF4FE /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		15F6B57F1E72A6FC007EF4FE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		15F6B5801E72A6FC007EF4FE /* stubs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stubs.h; sourceTree = "<group>"; };
+		15F6B5821E72A6FC007EF4FE /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		15F6B5831E72A6FC007EF4FE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		15F6B5851E72A6FC007EF4FE /* BasicOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicOperation.swift; sourceTree = "<group>"; };
+		15F6B5861E72A6FC007EF4FE /* CameraConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraConversion.swift; sourceTree = "<group>"; };
+		15F6B5871E72A6FC007EF4FE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		15F6B5881E72A6FC007EF4FE /* FillMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillMode.swift; sourceTree = "<group>"; };
+		15F6B5891E72A6FC007EF4FE /* Framebuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framebuffer.swift; sourceTree = "<group>"; };
+		15F6B58A1E72A6FC007EF4FE /* FramebufferCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramebufferCache.swift; sourceTree = "<group>"; };
+		15F6B58B1E72A6FC007EF4FE /* ImageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGenerator.swift; sourceTree = "<group>"; };
+		15F6B58C1E72A6FC007EF4FE /* ImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOrientation.swift; sourceTree = "<group>"; };
+		15F6B58E1E72A6FC007EF4FE /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		15F6B58F1E72A6FC007EF4FE /* GPUImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImage.h; sourceTree = "<group>"; };
+		15F6B5901E72A6FC007EF4FE /* MovieInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInput.swift; sourceTree = "<group>"; };
+		15F6B5911E72A6FC007EF4FE /* MovieOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieOutput.swift; sourceTree = "<group>"; };
+		15F6B5921E72A6FC007EF4FE /* OpenGLContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLContext.swift; sourceTree = "<group>"; };
+		15F6B5931E72A6FC007EF4FE /* PictureInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureInput.swift; sourceTree = "<group>"; };
+		15F6B5941E72A6FC007EF4FE /* PictureOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureOutput.swift; sourceTree = "<group>"; };
+		15F6B5951E72A6FC007EF4FE /* RenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
+		15F6B5971E72A6FC007EF4FE /* GLUTRenderWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLUTRenderWindow.swift; sourceTree = "<group>"; };
+		15F6B5981E72A6FC007EF4FE /* OpenGLContext-RPi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OpenGLContext-RPi.swift"; sourceTree = "<group>"; };
+		15F6B5991E72A6FC007EF4FE /* OpenGLContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLContext.swift; sourceTree = "<group>"; };
+		15F6B59A1E72A6FC007EF4FE /* RPiRenderWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPiRenderWindow.swift; sourceTree = "<group>"; };
+		15F6B59B1E72A6FC007EF4FE /* V4LCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V4LCamera.swift; sourceTree = "<group>"; };
+		15F6B59C1E72A6FC007EF4FE /* v4lfuncs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = v4lfuncs.c; sourceTree = "<group>"; };
+		15F6B59D1E72A6FC007EF4FE /* v4lfuncs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = v4lfuncs.h; sourceTree = "<group>"; };
+		15F6B59F1E72A6FC007EF4FE /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		15F6B5A01E72A6FC007EF4FE /* MovieInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInput.swift; sourceTree = "<group>"; };
+		15F6B5A11E72A6FC007EF4FE /* MovieOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieOutput.swift; sourceTree = "<group>"; };
+		15F6B5A21E72A6FC007EF4FE /* OpenGLContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLContext.swift; sourceTree = "<group>"; };
+		15F6B5A31E72A6FC007EF4FE /* PictureInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureInput.swift; sourceTree = "<group>"; };
+		15F6B5A41E72A6FC007EF4FE /* PictureOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureOutput.swift; sourceTree = "<group>"; };
+		15F6B5A51E72A6FC007EF4FE /* RenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
+		15F6B5A61E72A6FC007EF4FE /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		15F6B5A71E72A6FC007EF4FE /* OpenGLContext_Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLContext_Shared.swift; sourceTree = "<group>"; };
+		15F6B5A81E72A6FC007EF4FE /* OpenGLRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLRendering.swift; sourceTree = "<group>"; };
+		15F6B5A91E72A6FC007EF4FE /* OperationGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationGroup.swift; sourceTree = "<group>"; };
+		15F6B5AB1E72A6FC007EF4FE /* AdaptiveThreshold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveThreshold.swift; sourceTree = "<group>"; };
+		15F6B5AC1E72A6FC007EF4FE /* AddBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBlend.swift; sourceTree = "<group>"; };
+		15F6B5AD1E72A6FC007EF4FE /* AlphaBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaBlend.swift; sourceTree = "<group>"; };
+		15F6B5AE1E72A6FC007EF4FE /* AmatorkaFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmatorkaFilter.swift; sourceTree = "<group>"; };
+		15F6B5AF1E72A6FC007EF4FE /* AverageColorExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageColorExtractor.swift; sourceTree = "<group>"; };
+		15F6B5B01E72A6FC007EF4FE /* AverageLuminanceExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageLuminanceExtractor.swift; sourceTree = "<group>"; };
+		15F6B5B11E72A6FC007EF4FE /* AverageLuminanceThreshold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageLuminanceThreshold.swift; sourceTree = "<group>"; };
+		15F6B5B21E72A6FC007EF4FE /* BilateralBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilateralBlur.swift; sourceTree = "<group>"; };
+		15F6B5B31E72A6FC007EF4FE /* BoxBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBlur.swift; sourceTree = "<group>"; };
+		15F6B5B41E72A6FC007EF4FE /* BrightnessAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessAdjustment.swift; sourceTree = "<group>"; };
+		15F6B5B51E72A6FC007EF4FE /* BulgeDistortion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulgeDistortion.swift; sourceTree = "<group>"; };
+		15F6B5B61E72A6FC007EF4FE /* CannyEdgeDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CannyEdgeDetection.swift; sourceTree = "<group>"; };
+		15F6B5B71E72A6FC007EF4FE /* CGAColorspaceFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAColorspaceFilter.swift; sourceTree = "<group>"; };
+		15F6B5B81E72A6FC007EF4FE /* ChromaKeyBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaKeyBlend.swift; sourceTree = "<group>"; };
+		15F6B5B91E72A6FC007EF4FE /* ChromaKeying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaKeying.swift; sourceTree = "<group>"; };
+		15F6B5BA1E72A6FC007EF4FE /* CircleGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGenerator.swift; sourceTree = "<group>"; };
+		15F6B5BB1E72A6FC007EF4FE /* ClosingFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosingFilter.swift; sourceTree = "<group>"; };
+		15F6B5BC1E72A6FC007EF4FE /* ColorBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBlend.swift; sourceTree = "<group>"; };
+		15F6B5BD1E72A6FC007EF4FE /* ColorBurnBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBurnBlend.swift; sourceTree = "<group>"; };
+		15F6B5BE1E72A6FC007EF4FE /* ColorDodgeBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDodgeBlend.swift; sourceTree = "<group>"; };
+		15F6B5BF1E72A6FC007EF4FE /* ColorInversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorInversion.swift; sourceTree = "<group>"; };
+		15F6B5C01E72A6FC007EF4FE /* ColorLocalBinaryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorLocalBinaryPattern.swift; sourceTree = "<group>"; };
+		15F6B5C11E72A6FC007EF4FE /* ColorMatrixFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMatrixFilter.swift; sourceTree = "<group>"; };
+		15F6B5C21E72A6FC007EF4FE /* ColourFASTFeatureDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourFASTFeatureDetection.swift; sourceTree = "<group>"; };
+		15F6B5C31E72A6FC007EF4FE /* ContrastAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrastAdjustment.swift; sourceTree = "<group>"; };
+		15F6B5C41E72A6FC007EF4FE /* Convolution3x3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convolution3x3.swift; sourceTree = "<group>"; };
+		15F6B5C51E72A6FC007EF4FE /* Crop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crop.swift; sourceTree = "<group>"; };
+		15F6B5C61E72A6FC007EF4FE /* CrosshairGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosshairGenerator.swift; sourceTree = "<group>"; };
+		15F6B5C71E72A6FC007EF4FE /* Crosshatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crosshatch.swift; sourceTree = "<group>"; };
+		15F6B5C81E72A6FC007EF4FE /* DarkenBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkenBlend.swift; sourceTree = "<group>"; };
+		15F6B5C91E72A6FC007EF4FE /* DifferenceBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceBlend.swift; sourceTree = "<group>"; };
+		15F6B5CA1E72A6FC007EF4FE /* Dilation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dilation.swift; sourceTree = "<group>"; };
+		15F6B5CB1E72A6FC007EF4FE /* DissolveBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DissolveBlend.swift; sourceTree = "<group>"; };
+		15F6B5CC1E72A6FC007EF4FE /* DivideBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivideBlend.swift; sourceTree = "<group>"; };
+		15F6B5CD1E72A6FC007EF4FE /* EmbossFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbossFilter.swift; sourceTree = "<group>"; };
+		15F6B5CE1E72A6FC007EF4FE /* Erosion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Erosion.swift; sourceTree = "<group>"; };
+		15F6B5CF1E72A6FC007EF4FE /* ExclusionBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusionBlend.swift; sourceTree = "<group>"; };
+		15F6B5D01E72A6FC007EF4FE /* ExposureAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureAdjustment.swift; sourceTree = "<group>"; };
+		15F6B5D11E72A6FC007EF4FE /* FalseColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FalseColor.swift; sourceTree = "<group>"; };
+		15F6B5D21E72A6FC007EF4FE /* GammaAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GammaAdjustment.swift; sourceTree = "<group>"; };
+		15F6B5D31E72A6FC007EF4FE /* GaussianBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaussianBlur.swift; sourceTree = "<group>"; };
+		15F6B5D41E72A6FC007EF4FE /* GlassSphereRefraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassSphereRefraction.swift; sourceTree = "<group>"; };
+		15F6B5D51E72A6FC007EF4FE /* Halftone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Halftone.swift; sourceTree = "<group>"; };
+		15F6B5D61E72A6FC007EF4FE /* HardLightBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardLightBlend.swift; sourceTree = "<group>"; };
+		15F6B5D71E72A6FC007EF4FE /* HarrisCornerDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarrisCornerDetector.swift; sourceTree = "<group>"; };
+		15F6B5D81E72A6FC007EF4FE /* Haze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haze.swift; sourceTree = "<group>"; };
+		15F6B5D91E72A6FC007EF4FE /* HighlightAndShadowTint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightAndShadowTint.swift; sourceTree = "<group>"; };
+		15F6B5DA1E72A6FC007EF4FE /* HighlightsAndShadows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsAndShadows.swift; sourceTree = "<group>"; };
+		15F6B5DB1E72A6FC007EF4FE /* HighPassFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighPassFilter.swift; sourceTree = "<group>"; };
+		15F6B5DC1E72A6FC007EF4FE /* Histogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Histogram.swift; sourceTree = "<group>"; };
+		15F6B5DD1E72A6FC007EF4FE /* HistogramDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistogramDisplay.swift; sourceTree = "<group>"; };
+		15F6B5DE1E72A6FC007EF4FE /* HistogramEqualization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistogramEqualization.swift; sourceTree = "<group>"; };
+		15F6B5DF1E72A6FC007EF4FE /* HueAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueAdjustment.swift; sourceTree = "<group>"; };
+		15F6B5E01E72A6FC007EF4FE /* HueBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueBlend.swift; sourceTree = "<group>"; };
+		15F6B5E11E72A6FC007EF4FE /* ImageBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBuffer.swift; sourceTree = "<group>"; };
+		15F6B5E21E72A6FC007EF4FE /* iOSBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBlur.swift; sourceTree = "<group>"; };
+		15F6B5E31E72A6FC007EF4FE /* KuwaharaFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuwaharaFilter.swift; sourceTree = "<group>"; };
+		15F6B5E41E72A6FC007EF4FE /* KuwaharaRadius3Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuwaharaRadius3Filter.swift; sourceTree = "<group>"; };
+		15F6B5E51E72A6FC007EF4FE /* LanczosResampling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanczosResampling.swift; sourceTree = "<group>"; };
+		15F6B5E61E72A6FC007EF4FE /* Laplacian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Laplacian.swift; sourceTree = "<group>"; };
+		15F6B5E71E72A6FC007EF4FE /* LevelsAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsAdjustment.swift; sourceTree = "<group>"; };
+		15F6B5E81E72A6FC007EF4FE /* LightenBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightenBlend.swift; sourceTree = "<group>"; };
+		15F6B5E91E72A6FC007EF4FE /* LinearBurnBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearBurnBlend.swift; sourceTree = "<group>"; };
+		15F6B5EA1E72A6FC007EF4FE /* LineGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGenerator.swift; sourceTree = "<group>"; };
+		15F6B5EB1E72A6FC007EF4FE /* LocalBinaryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalBinaryPattern.swift; sourceTree = "<group>"; };
+		15F6B5EC1E72A6FC007EF4FE /* LookupFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupFilter.swift; sourceTree = "<group>"; };
+		15F6B5EE1E72A6FC007EF4FE /* lookup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup.png; sourceTree = "<group>"; };
+		15F6B5EF1E72A6FC007EF4FE /* lookup_amatorka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_amatorka.png; sourceTree = "<group>"; };
+		15F6B5F01E72A6FC007EF4FE /* lookup_miss_etikate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_miss_etikate.png; sourceTree = "<group>"; };
+		15F6B5F11E72A6FC007EF4FE /* lookup_soft_elegance_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_soft_elegance_1.png; sourceTree = "<group>"; };
+		15F6B5F21E72A6FC007EF4FE /* lookup_soft_elegance_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_soft_elegance_2.png; sourceTree = "<group>"; };
+		15F6B5F31E72A6FC007EF4FE /* LowPassFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowPassFilter.swift; sourceTree = "<group>"; };
+		15F6B5F41E72A6FC007EF4FE /* Luminance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Luminance.swift; sourceTree = "<group>"; };
+		15F6B5F51E72A6FC007EF4FE /* LuminanceRangeReduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminanceRangeReduction.swift; sourceTree = "<group>"; };
+		15F6B5F61E72A6FC007EF4FE /* LuminanceThreshold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminanceThreshold.swift; sourceTree = "<group>"; };
+		15F6B5F71E72A6FC007EF4FE /* LuminosityBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminosityBlend.swift; sourceTree = "<group>"; };
+		15F6B5F81E72A6FC007EF4FE /* MedianFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedianFilter.swift; sourceTree = "<group>"; };
+		15F6B5F91E72A6FC007EF4FE /* MissEtikateFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissEtikateFilter.swift; sourceTree = "<group>"; };
+		15F6B5FA1E72A6FC007EF4FE /* MonochromeFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonochromeFilter.swift; sourceTree = "<group>"; };
+		15F6B5FB1E72A6FC007EF4FE /* MotionBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionBlur.swift; sourceTree = "<group>"; };
+		15F6B5FC1E72A6FC007EF4FE /* MotionDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionDetector.swift; sourceTree = "<group>"; };
+		15F6B5FD1E72A6FC007EF4FE /* MultiplyBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplyBlend.swift; sourceTree = "<group>"; };
+		15F6B5FE1E72A6FC007EF4FE /* NobleCornerDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobleCornerDetector.swift; sourceTree = "<group>"; };
+		15F6B5FF1E72A6FC007EF4FE /* NormalBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalBlend.swift; sourceTree = "<group>"; };
+		15F6B6001E72A6FC007EF4FE /* OpacityAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpacityAdjustment.swift; sourceTree = "<group>"; };
+		15F6B6011E72A6FC007EF4FE /* OpeningFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningFilter.swift; sourceTree = "<group>"; };
+		15F6B6021E72A6FC007EF4FE /* OverlayBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayBlend.swift; sourceTree = "<group>"; };
+		15F6B6031E72A6FC007EF4FE /* PinchDistortion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchDistortion.swift; sourceTree = "<group>"; };
+		15F6B6041E72A6FC007EF4FE /* Pixellate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pixellate.swift; sourceTree = "<group>"; };
+		15F6B6051E72A6FC007EF4FE /* PolarPixellate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarPixellate.swift; sourceTree = "<group>"; };
+		15F6B6061E72A6FC007EF4FE /* PolkaDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolkaDot.swift; sourceTree = "<group>"; };
+		15F6B6071E72A6FC007EF4FE /* Posterize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posterize.swift; sourceTree = "<group>"; };
+		15F6B6081E72A6FC007EF4FE /* PrewittEdgeDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrewittEdgeDetection.swift; sourceTree = "<group>"; };
+		15F6B6091E72A6FC007EF4FE /* RGBAdjustmentFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBAdjustmentFilter.swift; sourceTree = "<group>"; };
+		15F6B60A1E72A6FC007EF4FE /* SaturationAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaturationAdjustment.swift; sourceTree = "<group>"; };
+		15F6B60B1E72A6FC007EF4FE /* SaturationBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaturationBlend.swift; sourceTree = "<group>"; };
+		15F6B60C1E72A6FC007EF4FE /* ScreenBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenBlend.swift; sourceTree = "<group>"; };
+		15F6B60D1E72A6FC007EF4FE /* SepiaToneFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepiaToneFilter.swift; sourceTree = "<group>"; };
+		15F6B60F1E72A6FC007EF4FE /* AdaptiveThreshold_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AdaptiveThreshold_GL.fsh; sourceTree = "<group>"; };
+		15F6B6101E72A6FC007EF4FE /* AdaptiveThreshold_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AdaptiveThreshold_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6111E72A6FC007EF4FE /* AddBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AddBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6121E72A6FC007EF4FE /* AddBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AddBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6131E72A6FC007EF4FE /* AlphaBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AlphaBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6141E72A6FC007EF4FE /* AlphaBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AlphaBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6151E72A6FC007EF4FE /* AlphaTest_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AlphaTest_GL.fsh; sourceTree = "<group>"; };
+		15F6B6161E72A6FC007EF4FE /* AlphaTest_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AlphaTest_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6171E72A6FC007EF4FE /* AverageColor.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AverageColor.vsh; sourceTree = "<group>"; };
+		15F6B6181E72A6FC007EF4FE /* AverageColor_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AverageColor_GL.fsh; sourceTree = "<group>"; };
+		15F6B6191E72A6FC007EF4FE /* AverageColor_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AverageColor_GLES.fsh; sourceTree = "<group>"; };
+		15F6B61A1E72A6FC007EF4FE /* AverageLuminance_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AverageLuminance_GL.fsh; sourceTree = "<group>"; };
+		15F6B61B1E72A6FC007EF4FE /* AverageLuminance_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = AverageLuminance_GLES.fsh; sourceTree = "<group>"; };
+		15F6B61C1E72A6FC007EF4FE /* BilateralBlur.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = BilateralBlur.vsh; sourceTree = "<group>"; };
+		15F6B61D1E72A6FC007EF4FE /* BilateralBlur_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = BilateralBlur_GL.fsh; sourceTree = "<group>"; };
+		15F6B61E1E72A6FC007EF4FE /* BilateralBlur_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = BilateralBlur_GLES.fsh; sourceTree = "<group>"; };
+		15F6B61F1E72A6FC007EF4FE /* Brightness_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Brightness_GL.fsh; sourceTree = "<group>"; };
+		15F6B6201E72A6FC007EF4FE /* Brightness_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Brightness_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6211E72A6FC007EF4FE /* BulgeDistortion_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = BulgeDistortion_GL.fsh; sourceTree = "<group>"; };
+		15F6B6221E72A6FC007EF4FE /* BulgeDistortion_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = BulgeDistortion_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6231E72A6FC007EF4FE /* CGAColorspace_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = CGAColorspace_GL.fsh; sourceTree = "<group>"; };
+		15F6B6241E72A6FC007EF4FE /* CGAColorspace_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = CGAColorspace_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6251E72A6FC007EF4FE /* ChromaKey_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ChromaKey_GL.fsh; sourceTree = "<group>"; };
+		15F6B6261E72A6FC007EF4FE /* ChromaKey_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ChromaKey_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6271E72A6FC007EF4FE /* ChromaKeyBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ChromaKeyBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6281E72A6FC007EF4FE /* ChromaKeyBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ChromaKeyBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6291E72A6FC007EF4FE /* Circle.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Circle.vsh; sourceTree = "<group>"; };
+		15F6B62A1E72A6FC007EF4FE /* Circle_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Circle_GL.fsh; sourceTree = "<group>"; };
+		15F6B62B1E72A6FC007EF4FE /* Circle_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Circle_GLES.fsh; sourceTree = "<group>"; };
+		15F6B62C1E72A6FC007EF4FE /* ColorBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B62D1E72A6FC007EF4FE /* ColorBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B62E1E72A6FC007EF4FE /* ColorBurnBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorBurnBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B62F1E72A6FC007EF4FE /* ColorBurnBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorBurnBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6301E72A6FC007EF4FE /* ColorDodgeBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorDodgeBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6311E72A6FC007EF4FE /* ColorDodgeBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorDodgeBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6321E72A6FC007EF4FE /* ColorInvert_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorInvert_GL.fsh; sourceTree = "<group>"; };
+		15F6B6331E72A6FC007EF4FE /* ColorInvert_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorInvert_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6341E72A6FC007EF4FE /* ColorLocalBinaryPattern_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorLocalBinaryPattern_GL.fsh; sourceTree = "<group>"; };
+		15F6B6351E72A6FC007EF4FE /* ColorLocalBinaryPattern_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorLocalBinaryPattern_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6361E72A6FC007EF4FE /* ColorMatrix_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorMatrix_GL.fsh; sourceTree = "<group>"; };
+		15F6B6371E72A6FC007EF4FE /* ColorMatrix_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorMatrix_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6381E72A6FC007EF4FE /* ColorSwizzling_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorSwizzling_GL.fsh; sourceTree = "<group>"; };
+		15F6B6391E72A6FC007EF4FE /* ColorSwizzling_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColorSwizzling_GLES.fsh; sourceTree = "<group>"; };
+		15F6B63A1E72A6FC007EF4FE /* ColourFASTDecriptor.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColourFASTDecriptor.vsh; sourceTree = "<group>"; };
+		15F6B63B1E72A6FC007EF4FE /* ColourFASTDecriptor_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColourFASTDecriptor_GL.fsh; sourceTree = "<group>"; };
+		15F6B63C1E72A6FC007EF4FE /* ColourFASTDecriptor_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ColourFASTDecriptor_GLES.fsh; sourceTree = "<group>"; };
+		15F6B63D1E72A6FC007EF4FE /* Contrast_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Contrast_GL.fsh; sourceTree = "<group>"; };
+		15F6B63E1E72A6FC007EF4FE /* Contrast_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Contrast_GLES.fsh; sourceTree = "<group>"; };
+		15F6B63F1E72A6FC007EF4FE /* ConvertedShaders_GL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertedShaders_GL.swift; sourceTree = "<group>"; };
+		15F6B6401E72A6FC007EF4FE /* ConvertedShaders_GLES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertedShaders_GLES.swift; sourceTree = "<group>"; };
+		15F6B6411E72A6FC007EF4FE /* Convolution3x3_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Convolution3x3_GL.fsh; sourceTree = "<group>"; };
+		15F6B6421E72A6FC007EF4FE /* Convolution3x3_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Convolution3x3_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6431E72A6FC007EF4FE /* Crosshair.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Crosshair.vsh; sourceTree = "<group>"; };
+		15F6B6441E72A6FC007EF4FE /* Crosshair_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Crosshair_GL.fsh; sourceTree = "<group>"; };
+		15F6B6451E72A6FC007EF4FE /* Crosshair_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Crosshair_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6461E72A6FC007EF4FE /* Crosshatch_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Crosshatch_GL.fsh; sourceTree = "<group>"; };
+		15F6B6471E72A6FC007EF4FE /* Crosshatch_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Crosshatch_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6481E72A6FC007EF4FE /* DarkenBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DarkenBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6491E72A6FC007EF4FE /* DarkenBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DarkenBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B64A1E72A6FC007EF4FE /* DifferenceBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DifferenceBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B64B1E72A6FC007EF4FE /* DifferenceBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DifferenceBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B64C1E72A6FC007EF4FE /* Dilation1_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation1_GL.fsh; sourceTree = "<group>"; };
+		15F6B64D1E72A6FC007EF4FE /* Dilation1_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation1_GLES.fsh; sourceTree = "<group>"; };
+		15F6B64E1E72A6FC007EF4FE /* Dilation2_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation2_GL.fsh; sourceTree = "<group>"; };
+		15F6B64F1E72A6FC007EF4FE /* Dilation2_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation2_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6501E72A6FC007EF4FE /* Dilation3_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation3_GL.fsh; sourceTree = "<group>"; };
+		15F6B6511E72A6FC007EF4FE /* Dilation3_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation3_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6521E72A6FC007EF4FE /* Dilation4_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation4_GL.fsh; sourceTree = "<group>"; };
+		15F6B6531E72A6FC007EF4FE /* Dilation4_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Dilation4_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6541E72A6FC007EF4FE /* DirectionalNonMaximumSuppression_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DirectionalNonMaximumSuppression_GL.fsh; sourceTree = "<group>"; };
+		15F6B6551E72A6FC007EF4FE /* DirectionalNonMaximumSuppression_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DirectionalNonMaximumSuppression_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6561E72A6FC007EF4FE /* DirectionalSobelEdgeDetection_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DirectionalSobelEdgeDetection_GL.fsh; sourceTree = "<group>"; };
+		15F6B6571E72A6FC007EF4FE /* DirectionalSobelEdgeDetection_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DirectionalSobelEdgeDetection_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6581E72A6FC007EF4FE /* DissolveBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DissolveBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6591E72A6FC007EF4FE /* DissolveBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DissolveBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B65A1E72A6FC007EF4FE /* DivideBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DivideBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B65B1E72A6FC007EF4FE /* DivideBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DivideBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B65C1E72A6FC007EF4FE /* Erosion1_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion1_GL.fsh; sourceTree = "<group>"; };
+		15F6B65D1E72A6FC007EF4FE /* Erosion1_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion1_GLES.fsh; sourceTree = "<group>"; };
+		15F6B65E1E72A6FC007EF4FE /* Erosion2_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion2_GL.fsh; sourceTree = "<group>"; };
+		15F6B65F1E72A6FC007EF4FE /* Erosion2_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion2_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6601E72A6FC007EF4FE /* Erosion3_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion3_GL.fsh; sourceTree = "<group>"; };
+		15F6B6611E72A6FC007EF4FE /* Erosion3_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion3_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6621E72A6FC007EF4FE /* Erosion4_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion4_GL.fsh; sourceTree = "<group>"; };
+		15F6B6631E72A6FC007EF4FE /* Erosion4_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Erosion4_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6641E72A6FC007EF4FE /* ErosionDilation1.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ErosionDilation1.vsh; sourceTree = "<group>"; };
+		15F6B6651E72A6FC007EF4FE /* ErosionDilation2.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ErosionDilation2.vsh; sourceTree = "<group>"; };
+		15F6B6661E72A6FC007EF4FE /* ErosionDilation3.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ErosionDilation3.vsh; sourceTree = "<group>"; };
+		15F6B6671E72A6FC007EF4FE /* ErosionDilation4.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ErosionDilation4.vsh; sourceTree = "<group>"; };
+		15F6B6681E72A6FC007EF4FE /* ExclusionBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ExclusionBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6691E72A6FC007EF4FE /* ExclusionBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ExclusionBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B66A1E72A6FC007EF4FE /* Exposure_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Exposure_GL.fsh; sourceTree = "<group>"; };
+		15F6B66B1E72A6FC007EF4FE /* Exposure_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Exposure_GLES.fsh; sourceTree = "<group>"; };
+		15F6B66C1E72A6FC007EF4FE /* FalseColor_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = FalseColor_GL.fsh; sourceTree = "<group>"; };
+		15F6B66D1E72A6FC007EF4FE /* FalseColor_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = FalseColor_GLES.fsh; sourceTree = "<group>"; };
+		15F6B66E1E72A6FC007EF4FE /* FiveInput.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = FiveInput.vsh; sourceTree = "<group>"; };
+		15F6B66F1E72A6FC007EF4FE /* FourInput.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = FourInput.vsh; sourceTree = "<group>"; };
+		15F6B6701E72A6FC007EF4FE /* Gamma_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Gamma_GL.fsh; sourceTree = "<group>"; };
+		15F6B6711E72A6FC007EF4FE /* Gamma_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Gamma_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6721E72A6FC007EF4FE /* GlassSphere_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = GlassSphere_GL.fsh; sourceTree = "<group>"; };
+		15F6B6731E72A6FC007EF4FE /* GlassSphere_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = GlassSphere_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6741E72A6FC007EF4FE /* Halftone_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Halftone_GL.fsh; sourceTree = "<group>"; };
+		15F6B6751E72A6FC007EF4FE /* Halftone_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Halftone_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6761E72A6FC007EF4FE /* HardLightBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HardLightBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6771E72A6FC007EF4FE /* HardLightBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HardLightBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6781E72A6FC007EF4FE /* HarrisCornerDetector_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HarrisCornerDetector_GL.fsh; sourceTree = "<group>"; };
+		15F6B6791E72A6FC007EF4FE /* HarrisCornerDetector_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HarrisCornerDetector_GLES.fsh; sourceTree = "<group>"; };
+		15F6B67A1E72A6FC007EF4FE /* Haze_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Haze_GL.fsh; sourceTree = "<group>"; };
+		15F6B67B1E72A6FC007EF4FE /* Haze_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Haze_GLES.fsh; sourceTree = "<group>"; };
+		15F6B67C1E72A6FC007EF4FE /* HighlightShadow_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HighlightShadow_GL.fsh; sourceTree = "<group>"; };
+		15F6B67D1E72A6FC007EF4FE /* HighlightShadow_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HighlightShadow_GLES.fsh; sourceTree = "<group>"; };
+		15F6B67E1E72A6FC007EF4FE /* HighlightShadowTint_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HighlightShadowTint_GL.fsh; sourceTree = "<group>"; };
+		15F6B67F1E72A6FC007EF4FE /* HighlightShadowTint_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HighlightShadowTint_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6801E72A6FC007EF4FE /* HistogramAccumulation_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramAccumulation_GL.fsh; sourceTree = "<group>"; };
+		15F6B6811E72A6FC007EF4FE /* HistogramAccumulation_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramAccumulation_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6821E72A6FC007EF4FE /* HistogramBlueSampling.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramBlueSampling.vsh; sourceTree = "<group>"; };
+		15F6B6831E72A6FC007EF4FE /* HistogramDisplay.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramDisplay.vsh; sourceTree = "<group>"; };
+		15F6B6841E72A6FC007EF4FE /* HistogramDisplay_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramDisplay_GL.fsh; sourceTree = "<group>"; };
+		15F6B6851E72A6FC007EF4FE /* HistogramDisplay_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramDisplay_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6861E72A6FC007EF4FE /* HistogramEqualizationBlue_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationBlue_GL.fsh; sourceTree = "<group>"; };
+		15F6B6871E72A6FC007EF4FE /* HistogramEqualizationBlue_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationBlue_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6881E72A6FC007EF4FE /* HistogramEqualizationGreen_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationGreen_GL.fsh; sourceTree = "<group>"; };
+		15F6B6891E72A6FC007EF4FE /* HistogramEqualizationGreen_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationGreen_GLES.fsh; sourceTree = "<group>"; };
+		15F6B68A1E72A6FC007EF4FE /* HistogramEqualizationLuminance_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationLuminance_GL.fsh; sourceTree = "<group>"; };
+		15F6B68B1E72A6FC007EF4FE /* HistogramEqualizationLuminance_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationLuminance_GLES.fsh; sourceTree = "<group>"; };
+		15F6B68C1E72A6FC007EF4FE /* HistogramEqualizationRed_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationRed_GL.fsh; sourceTree = "<group>"; };
+		15F6B68D1E72A6FC007EF4FE /* HistogramEqualizationRed_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationRed_GLES.fsh; sourceTree = "<group>"; };
+		15F6B68E1E72A6FC007EF4FE /* HistogramEqualizationRGB_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationRGB_GL.fsh; sourceTree = "<group>"; };
+		15F6B68F1E72A6FC007EF4FE /* HistogramEqualizationRGB_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramEqualizationRGB_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6901E72A6FC007EF4FE /* HistogramGreenSampling.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramGreenSampling.vsh; sourceTree = "<group>"; };
+		15F6B6911E72A6FC007EF4FE /* HistogramLuminanceSampling.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramLuminanceSampling.vsh; sourceTree = "<group>"; };
+		15F6B6921E72A6FC007EF4FE /* HistogramRedSampling.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HistogramRedSampling.vsh; sourceTree = "<group>"; };
+		15F6B6931E72A6FC007EF4FE /* Hue_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Hue_GL.fsh; sourceTree = "<group>"; };
+		15F6B6941E72A6FC007EF4FE /* Hue_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Hue_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6951E72A6FC007EF4FE /* HueBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HueBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6961E72A6FC007EF4FE /* HueBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = HueBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6971E72A6FC007EF4FE /* Kuwahara_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Kuwahara_GL.fsh; sourceTree = "<group>"; };
+		15F6B6981E72A6FC007EF4FE /* Kuwahara_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Kuwahara_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6991E72A6FC007EF4FE /* KuwaharaRadius3_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = KuwaharaRadius3_GL.fsh; sourceTree = "<group>"; };
+		15F6B69A1E72A6FC007EF4FE /* KuwaharaRadius3_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = KuwaharaRadius3_GLES.fsh; sourceTree = "<group>"; };
+		15F6B69B1E72A6FC007EF4FE /* LanczosResampling.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LanczosResampling.vsh; sourceTree = "<group>"; };
+		15F6B69C1E72A6FC007EF4FE /* LanczosResampling_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LanczosResampling_GL.fsh; sourceTree = "<group>"; };
+		15F6B69D1E72A6FC007EF4FE /* LanczosResampling_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LanczosResampling_GLES.fsh; sourceTree = "<group>"; };
+		15F6B69E1E72A6FC007EF4FE /* Laplacian_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Laplacian_GL.fsh; sourceTree = "<group>"; };
+		15F6B69F1E72A6FC007EF4FE /* Laplacian_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Laplacian_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6A01E72A6FC007EF4FE /* Levels_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Levels_GL.fsh; sourceTree = "<group>"; };
+		15F6B6A11E72A6FC007EF4FE /* Levels_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Levels_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6A21E72A6FC007EF4FE /* LightenBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LightenBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6A31E72A6FC007EF4FE /* LightenBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LightenBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6A41E72A6FC007EF4FE /* Line.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Line.vsh; sourceTree = "<group>"; };
+		15F6B6A51E72A6FC007EF4FE /* Line_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Line_GL.fsh; sourceTree = "<group>"; };
+		15F6B6A61E72A6FC007EF4FE /* Line_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Line_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6A71E72A6FC007EF4FE /* LinearBurnBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LinearBurnBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6A81E72A6FC007EF4FE /* LinearBurnBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LinearBurnBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6A91E72A6FC007EF4FE /* LocalBinaryPattern_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LocalBinaryPattern_GL.fsh; sourceTree = "<group>"; };
+		15F6B6AA1E72A6FC007EF4FE /* LocalBinaryPattern_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LocalBinaryPattern_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6AB1E72A6FC007EF4FE /* Lookup_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Lookup_GL.fsh; sourceTree = "<group>"; };
+		15F6B6AC1E72A6FC007EF4FE /* Lookup_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Lookup_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6AD1E72A6FC007EF4FE /* Luminance_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Luminance_GL.fsh; sourceTree = "<group>"; };
+		15F6B6AE1E72A6FC007EF4FE /* Luminance_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Luminance_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6AF1E72A6FC007EF4FE /* LuminanceRange_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LuminanceRange_GL.fsh; sourceTree = "<group>"; };
+		15F6B6B01E72A6FC007EF4FE /* LuminanceRange_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LuminanceRange_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6B11E72A6FC007EF4FE /* LuminanceThreshold_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LuminanceThreshold_GL.fsh; sourceTree = "<group>"; };
+		15F6B6B21E72A6FC007EF4FE /* LuminanceThreshold_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LuminanceThreshold_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6B31E72A6FC007EF4FE /* LuminosityBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LuminosityBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6B41E72A6FC007EF4FE /* LuminosityBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LuminosityBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6B51E72A6FC007EF4FE /* Median_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Median_GL.fsh; sourceTree = "<group>"; };
+		15F6B6B61E72A6FC007EF4FE /* Median_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Median_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6B71E72A6FC007EF4FE /* Monochrome_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Monochrome_GL.fsh; sourceTree = "<group>"; };
+		15F6B6B81E72A6FC007EF4FE /* Monochrome_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Monochrome_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6B91E72A6FC007EF4FE /* MotionBlur.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MotionBlur.vsh; sourceTree = "<group>"; };
+		15F6B6BA1E72A6FC007EF4FE /* MotionBlur_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MotionBlur_GL.fsh; sourceTree = "<group>"; };
+		15F6B6BB1E72A6FC007EF4FE /* MotionBlur_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MotionBlur_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6BC1E72A6FC007EF4FE /* MotionComparison_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MotionComparison_GL.fsh; sourceTree = "<group>"; };
+		15F6B6BD1E72A6FC007EF4FE /* MotionComparison_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MotionComparison_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6BE1E72A6FC007EF4FE /* MultiplyBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MultiplyBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6BF1E72A6FC007EF4FE /* MultiplyBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = MultiplyBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6C01E72A6FC007EF4FE /* NearbyTexelSampling.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = NearbyTexelSampling.vsh; sourceTree = "<group>"; };
+		15F6B6C11E72A6FC007EF4FE /* NobleCornerDetector_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = NobleCornerDetector_GL.fsh; sourceTree = "<group>"; };
+		15F6B6C21E72A6FC007EF4FE /* NobleCornerDetector_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = NobleCornerDetector_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6C31E72A6FC007EF4FE /* NormalBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = NormalBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6C41E72A6FC007EF4FE /* NormalBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = NormalBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6C51E72A6FC007EF4FE /* OneInput.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = OneInput.vsh; sourceTree = "<group>"; };
+		15F6B6C61E72A6FC007EF4FE /* Opacity_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Opacity_GL.fsh; sourceTree = "<group>"; };
+		15F6B6C71E72A6FC007EF4FE /* Opacity_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Opacity_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6C81E72A6FC007EF4FE /* OverlayBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = OverlayBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6C91E72A6FC007EF4FE /* OverlayBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = OverlayBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6CA1E72A6FC007EF4FE /* Passthrough_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Passthrough_GL.fsh; sourceTree = "<group>"; };
+		15F6B6CB1E72A6FC007EF4FE /* Passthrough_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Passthrough_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6CC1E72A6FC007EF4FE /* PinchDistortion_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PinchDistortion_GL.fsh; sourceTree = "<group>"; };
+		15F6B6CD1E72A6FC007EF4FE /* PinchDistortion_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PinchDistortion_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6CE1E72A6FC007EF4FE /* Pixellate_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Pixellate_GL.fsh; sourceTree = "<group>"; };
+		15F6B6CF1E72A6FC007EF4FE /* Pixellate_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Pixellate_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6D01E72A6FC007EF4FE /* PolarPixellate_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PolarPixellate_GL.fsh; sourceTree = "<group>"; };
+		15F6B6D11E72A6FC007EF4FE /* PolarPixellate_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PolarPixellate_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6D21E72A6FC007EF4FE /* PolkaDot_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PolkaDot_GL.fsh; sourceTree = "<group>"; };
+		15F6B6D31E72A6FC007EF4FE /* PolkaDot_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PolkaDot_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6D41E72A6FC007EF4FE /* Posterize_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Posterize_GL.fsh; sourceTree = "<group>"; };
+		15F6B6D51E72A6FC007EF4FE /* Posterize_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Posterize_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6D61E72A6FC007EF4FE /* PrewittEdgeDetection_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PrewittEdgeDetection_GL.fsh; sourceTree = "<group>"; };
+		15F6B6D71E72A6FC007EF4FE /* PrewittEdgeDetection_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PrewittEdgeDetection_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6D81E72A6FC007EF4FE /* RGBAdjustment_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = RGBAdjustment_GL.fsh; sourceTree = "<group>"; };
+		15F6B6D91E72A6FC007EF4FE /* RGBAdjustment_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = RGBAdjustment_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6DA1E72A6FC007EF4FE /* Saturation_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Saturation_GL.fsh; sourceTree = "<group>"; };
+		15F6B6DB1E72A6FC007EF4FE /* Saturation_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Saturation_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6DC1E72A6FC007EF4FE /* SaturationBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SaturationBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6DD1E72A6FC007EF4FE /* SaturationBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SaturationBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6DE1E72A6FC007EF4FE /* ScreenBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ScreenBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6DF1E72A6FC007EF4FE /* ScreenBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ScreenBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6E01E72A6FC007EF4FE /* ShaderConverter.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ShaderConverter.sh; sourceTree = "<group>"; };
+		15F6B6E11E72A6FC007EF4FE /* Sharpen.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Sharpen.vsh; sourceTree = "<group>"; };
+		15F6B6E21E72A6FC007EF4FE /* Sharpen_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Sharpen_GL.fsh; sourceTree = "<group>"; };
+		15F6B6E31E72A6FC007EF4FE /* Sharpen_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Sharpen_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6E41E72A6FC007EF4FE /* ShiTomasiFeatureDetector_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ShiTomasiFeatureDetector_GL.fsh; sourceTree = "<group>"; };
+		15F6B6E51E72A6FC007EF4FE /* ShiTomasiFeatureDetector_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ShiTomasiFeatureDetector_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6E61E72A6FC007EF4FE /* Sketch_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Sketch_GL.fsh; sourceTree = "<group>"; };
+		15F6B6E71E72A6FC007EF4FE /* Sketch_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Sketch_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6E81E72A6FC007EF4FE /* SobelEdgeDetection_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SobelEdgeDetection_GL.fsh; sourceTree = "<group>"; };
+		15F6B6E91E72A6FC007EF4FE /* SobelEdgeDetection_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SobelEdgeDetection_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6EA1E72A6FC007EF4FE /* SoftLightBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SoftLightBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6EB1E72A6FC007EF4FE /* SoftLightBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SoftLightBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6EC1E72A6FC007EF4FE /* Solarize_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Solarize_GL.fsh; sourceTree = "<group>"; };
+		15F6B6ED1E72A6FC007EF4FE /* Solarize_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Solarize_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6EE1E72A6FC007EF4FE /* SourceOverBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SourceOverBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6EF1E72A6FC007EF4FE /* SourceOverBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SourceOverBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6F01E72A6FC007EF4FE /* SphereRefraction_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SphereRefraction_GL.fsh; sourceTree = "<group>"; };
+		15F6B6F11E72A6FC007EF4FE /* SphereRefraction_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SphereRefraction_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6F21E72A6FC007EF4FE /* StretchDistortion_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = StretchDistortion_GL.fsh; sourceTree = "<group>"; };
+		15F6B6F31E72A6FC007EF4FE /* StretchDistortion_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = StretchDistortion_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6F41E72A6FC007EF4FE /* SubtractBlend_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SubtractBlend_GL.fsh; sourceTree = "<group>"; };
+		15F6B6F51E72A6FC007EF4FE /* SubtractBlend_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SubtractBlend_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6F61E72A6FC007EF4FE /* Swirl_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Swirl_GL.fsh; sourceTree = "<group>"; };
+		15F6B6F71E72A6FC007EF4FE /* Swirl_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Swirl_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6F81E72A6FC007EF4FE /* ThreeInput.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThreeInput.vsh; sourceTree = "<group>"; };
+		15F6B6F91E72A6FC007EF4FE /* ThresholdEdgeDetection_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThresholdEdgeDetection_GL.fsh; sourceTree = "<group>"; };
+		15F6B6FA1E72A6FC007EF4FE /* ThresholdEdgeDetection_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThresholdEdgeDetection_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6FB1E72A6FC007EF4FE /* ThresholdedNonMaximumSuppression_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThresholdedNonMaximumSuppression_GL.fsh; sourceTree = "<group>"; };
+		15F6B6FC1E72A6FC007EF4FE /* ThresholdedNonMaximumSuppression_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThresholdedNonMaximumSuppression_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6FD1E72A6FC007EF4FE /* ThresholdSketch_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThresholdSketch_GL.fsh; sourceTree = "<group>"; };
+		15F6B6FE1E72A6FC007EF4FE /* ThresholdSketch_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ThresholdSketch_GLES.fsh; sourceTree = "<group>"; };
+		15F6B6FF1E72A6FC007EF4FE /* TiltShift_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = TiltShift_GL.fsh; sourceTree = "<group>"; };
+		15F6B7001E72A6FC007EF4FE /* TiltShift_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = TiltShift_GLES.fsh; sourceTree = "<group>"; };
+		15F6B7011E72A6FC007EF4FE /* Toon_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Toon_GL.fsh; sourceTree = "<group>"; };
+		15F6B7021E72A6FC007EF4FE /* Toon_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Toon_GLES.fsh; sourceTree = "<group>"; };
+		15F6B7031E72A6FC007EF4FE /* Transform.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Transform.vsh; sourceTree = "<group>"; };
+		15F6B7041E72A6FC007EF4FE /* TwoInput.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = TwoInput.vsh; sourceTree = "<group>"; };
+		15F6B7051E72A6FC007EF4FE /* UnsharpMask_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = UnsharpMask_GL.fsh; sourceTree = "<group>"; };
+		15F6B7061E72A6FC007EF4FE /* UnsharpMask_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = UnsharpMask_GLES.fsh; sourceTree = "<group>"; };
+		15F6B7071E72A6FC007EF4FE /* Vibrance_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Vibrance_GL.fsh; sourceTree = "<group>"; };
+		15F6B7081E72A6FC007EF4FE /* Vibrance_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Vibrance_GLES.fsh; sourceTree = "<group>"; };
+		15F6B7091E72A6FC007EF4FE /* Vignette_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Vignette_GL.fsh; sourceTree = "<group>"; };
+		15F6B70A1E72A6FC007EF4FE /* Vignette_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Vignette_GLES.fsh; sourceTree = "<group>"; };
+		15F6B70B1E72A6FC007EF4FE /* WeakPixelInclusion_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = WeakPixelInclusion_GL.fsh; sourceTree = "<group>"; };
+		15F6B70C1E72A6FC007EF4FE /* WeakPixelInclusion_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = WeakPixelInclusion_GLES.fsh; sourceTree = "<group>"; };
+		15F6B70D1E72A6FC007EF4FE /* WhiteBalance_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = WhiteBalance_GL.fsh; sourceTree = "<group>"; };
+		15F6B70E1E72A6FC007EF4FE /* WhiteBalance_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = WhiteBalance_GLES.fsh; sourceTree = "<group>"; };
+		15F6B70F1E72A6FC007EF4FE /* XYDerivative_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = XYDerivative_GL.fsh; sourceTree = "<group>"; };
+		15F6B7101E72A6FC007EF4FE /* XYDerivative_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = XYDerivative_GLES.fsh; sourceTree = "<group>"; };
+		15F6B7111E72A6FC007EF4FE /* YUVConversionFullRange_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = YUVConversionFullRange_GL.fsh; sourceTree = "<group>"; };
+		15F6B7121E72A6FC007EF4FE /* YUVConversionFullRange_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = YUVConversionFullRange_GLES.fsh; sourceTree = "<group>"; };
+		15F6B7131E72A6FC007EF4FE /* YUVConversionFullRangeUVPlanar_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = YUVConversionFullRangeUVPlanar_GL.fsh; sourceTree = "<group>"; };
+		15F6B7141E72A6FD007EF4FE /* YUVConversionFullRangeUVPlanar_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = YUVConversionFullRangeUVPlanar_GLES.fsh; sourceTree = "<group>"; };
+		15F6B7151E72A6FD007EF4FE /* YUVConversionVideoRange_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = YUVConversionVideoRange_GL.fsh; sourceTree = "<group>"; };
+		15F6B7161E72A6FD007EF4FE /* YUVConversionVideoRange_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = YUVConversionVideoRange_GLES.fsh; sourceTree = "<group>"; };
+		15F6B7171E72A6FD007EF4FE /* ZoomBlur_GL.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ZoomBlur_GL.fsh; sourceTree = "<group>"; };
+		15F6B7181E72A6FD007EF4FE /* ZoomBlur_GLES.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ZoomBlur_GLES.fsh; sourceTree = "<group>"; };
+		15F6B7191E72A6FD007EF4FE /* Sharpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sharpen.swift; sourceTree = "<group>"; };
+		15F6B71A1E72A6FD007EF4FE /* ShiTomasiFeatureDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiTomasiFeatureDetector.swift; sourceTree = "<group>"; };
+		15F6B71B1E72A6FD007EF4FE /* SingleComponentGaussianBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleComponentGaussianBlur.swift; sourceTree = "<group>"; };
+		15F6B71C1E72A6FD007EF4FE /* SketchFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchFilter.swift; sourceTree = "<group>"; };
+		15F6B71D1E72A6FD007EF4FE /* SmoothToonFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothToonFilter.swift; sourceTree = "<group>"; };
+		15F6B71E1E72A6FD007EF4FE /* SobelEdgeDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobelEdgeDetection.swift; sourceTree = "<group>"; };
+		15F6B71F1E72A6FD007EF4FE /* SoftElegance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftElegance.swift; sourceTree = "<group>"; };
+		15F6B7201E72A6FD007EF4FE /* SoftLightBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftLightBlend.swift; sourceTree = "<group>"; };
+		15F6B7211E72A6FD007EF4FE /* Solarize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solarize.swift; sourceTree = "<group>"; };
+		15F6B7221E72A6FD007EF4FE /* SolidColorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidColorGenerator.swift; sourceTree = "<group>"; };
+		15F6B7231E72A6FD007EF4FE /* SourceOverBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceOverBlend.swift; sourceTree = "<group>"; };
+		15F6B7241E72A6FD007EF4FE /* SphereRefraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SphereRefraction.swift; sourceTree = "<group>"; };
+		15F6B7251E72A6FD007EF4FE /* StretchDistortion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchDistortion.swift; sourceTree = "<group>"; };
+		15F6B7261E72A6FD007EF4FE /* SubtractBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractBlend.swift; sourceTree = "<group>"; };
+		15F6B7271E72A6FD007EF4FE /* SwirlDistortion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwirlDistortion.swift; sourceTree = "<group>"; };
+		15F6B7281E72A6FD007EF4FE /* ThresholdSketch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdSketch.swift; sourceTree = "<group>"; };
+		15F6B7291E72A6FD007EF4FE /* ThresholdSobelEdgeDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdSobelEdgeDetection.swift; sourceTree = "<group>"; };
+		15F6B72A1E72A6FD007EF4FE /* TiltShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltShift.swift; sourceTree = "<group>"; };
+		15F6B72B1E72A6FD007EF4FE /* ToonFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToonFilter.swift; sourceTree = "<group>"; };
+		15F6B72C1E72A6FD007EF4FE /* TransformOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformOperation.swift; sourceTree = "<group>"; };
+		15F6B72D1E72A6FD007EF4FE /* UnsharpMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsharpMask.swift; sourceTree = "<group>"; };
+		15F6B72E1E72A6FD007EF4FE /* Vibrance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibrance.swift; sourceTree = "<group>"; };
+		15F6B72F1E72A6FD007EF4FE /* Vignette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vignette.swift; sourceTree = "<group>"; };
+		15F6B7301E72A6FD007EF4FE /* WhiteBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteBalance.swift; sourceTree = "<group>"; };
+		15F6B7311E72A6FD007EF4FE /* ZoomBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomBlur.swift; sourceTree = "<group>"; };
+		15F6B7321E72A6FD007EF4FE /* Pipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipeline.swift; sourceTree = "<group>"; };
+		15F6B7331E72A6FD007EF4FE /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		15F6B7341E72A6FD007EF4FE /* RawDataInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawDataInput.swift; sourceTree = "<group>"; };
+		15F6B7351E72A6FD007EF4FE /* RawDataOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawDataOutput.swift; sourceTree = "<group>"; };
+		15F6B7361E72A6FD007EF4FE /* SerialDispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialDispatch.swift; sourceTree = "<group>"; };
+		15F6B7371E72A6FD007EF4FE /* ShaderProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderProgram.swift; sourceTree = "<group>"; };
+		15F6B7381E72A6FD007EF4FE /* ShaderUniformSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderUniformSettings.swift; sourceTree = "<group>"; };
+		15F6B7391E72A6FD007EF4FE /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		15F6B73A1E72A6FD007EF4FE /* TextureInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureInput.swift; sourceTree = "<group>"; };
+		15F6B73B1E72A6FD007EF4FE /* TextureOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureOutput.swift; sourceTree = "<group>"; };
+		15F6B73C1E72A6FD007EF4FE /* TextureSamplingOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureSamplingOperation.swift; sourceTree = "<group>"; };
+		15F6B73D1E72A6FD007EF4FE /* Timestamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timestamp.swift; sourceTree = "<group>"; };
+		15F6B73E1E72A6FD007EF4FE /* TwoStageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoStageOperation.swift; sourceTree = "<group>"; };
+		15F6B7401E72A6FD007EF4FE /* Pipeline_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipeline_Tests.swift; sourceTree = "<group>"; };
+		15F6B7411E72A6FD007EF4FE /* ShaderProgram_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderProgram_Tests.swift; sourceTree = "<group>"; };
 		1BBA76871E72A02B00B2D37B /* VideoBuilderInteface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoBuilderInteface.swift; sourceTree = "<group>"; };
 		1BBA768A1E72A0D700B2D37B /* DDVideoHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDVideoHandler.swift; sourceTree = "<group>"; };
 		1BBA768C1E72A0E800B2D37B /* GPUVideoHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPUVideoHandler.swift; sourceTree = "<group>"; };
@@ -226,6 +721,608 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
+		15F6AE1C1E72A584007EF4FE /* External */ = {
+			isa = PBXGroup;
+			children = (
+				15F6AE1D1E72A584007EF4FE /* GPUImage */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		15F6AE1D1E72A584007EF4FE /* GPUImage */ = {
+			isa = PBXGroup;
+			children = (
+				15F6B5691E72A6FC007EF4FE /* framework */,
+			);
+			path = GPUImage;
+			sourceTree = "<group>";
+		};
+		15F6B5691E72A6FC007EF4FE /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				15F6B56A1E72A6FC007EF4FE /* compile-LinuxGL.sh */,
+				15F6B56B1E72A6FC007EF4FE /* compile-LinuxRPi.sh */,
+				15F6B56C1E72A6FC007EF4FE /* GPUImage.xcodeproj */,
+				15F6B56F1E72A6FC007EF4FE /* LinuxCompilationGenerator.sh */,
+				15F6B5701E72A6FC007EF4FE /* Package.swift */,
+				15F6B5711E72A6FC007EF4FE /* Packages */,
+				15F6B5841E72A6FC007EF4FE /* Source */,
+				15F6B73F1E72A6FD007EF4FE /* Tests */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		15F6B56D1E72A6FC007EF4FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15F6B7471E72A6FD007EF4FE /* GPUImage.framework */,
+				15F6B7491E72A6FD007EF4FE /* GPUImageTests_macOS.xctest */,
+				15F6B74B1E72A6FD007EF4FE /* GPUImage.framework */,
+				15F6B74D1E72A6FD007EF4FE /* GPUImageTests_iOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15F6B5711E72A6FC007EF4FE /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				15F6B5721E72A6FC007EF4FE /* CFreeGLUT */,
+				15F6B5761E72A6FC007EF4FE /* COpenGL */,
+				15F6B57A1E72A6FC007EF4FE /* COpenGLES */,
+				15F6B57D1E72A6FC007EF4FE /* CVideo4Linux */,
+				15F6B5811E72A6FC007EF4FE /* CVideoCore */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		15F6B5721E72A6FC007EF4FE /* CFreeGLUT */ = {
+			isa = PBXGroup;
+			children = (
+				15F6B5731E72A6FC007EF4FE /* module.modulemap */,
+				15F6B5741E72A6FC007EF4FE /* Package.swift */,
+				15F6B5751E72A6FC007EF4FE /* README.md */,
+			);
+			path = CFreeGLUT;
+			sourceTree = "<group>";
+		};
+		15F6B5761E72A6FC007EF4FE /* COpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				15F6B5771E72A6FC007EF4FE /* module.modulemap */,
+				15F6B5781E72A6FC007EF4FE /* Package.swift */,
+				15F6B5791E72A6FC007EF4FE /* proto.h */,
+			);
+			path = COpenGL;
+			sourceTree = "<group>";
+		};
+		15F6B57A1E72A6FC007EF4FE /* COpenGLES */ = {
+			isa = PBXGroup;
+			children = (
+				15F6B57B1E72A6FC007EF4FE /* module.modulemap */,
+				15F6B57C1E72A6FC007EF4FE /* Package.swift */,
+			);
+			path = COpenGLES;
+			sourceTree = "<group>";
+		};
+		15F6B57D1E72A6FC007EF4FE /* CVideo4Linux */ = {
+			isa = PBXGroup;
+			children = (
+				15F6B57E1E72A6FC007EF4FE /* module.modulemap */,
+				15F6B57F1E72A6FC007EF4FE /* Package.swift */,
+				15F6B5801E72A6FC007EF4FE /* stubs.h */,
+			);
+			path = CVideo4Linux;
+			sourceTree = "<group>";
+		};
+		15F6B5811E72A6FC007EF4FE /* CVideoCore */ = {
+			isa = PBXGroup;
+			children = (
+				15F6B5821E72A6FC007EF4FE /* module.modulemap */,
+				15F6B5831E72A6FC007EF4FE /* Package.swift */,
+			);
+			path = CVideoCore;
+			sourceTree = "<group>";
+		};
+		15F6B5841E72A6FC007EF4FE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				15F6B5851E72A6FC007EF4FE /* BasicOperation.swift */,
+				15F6B5861E72A6FC007EF4FE /* CameraConversion.swift */,
+				15F6B5871E72A6FC007EF4FE /* Color.swift */,
+				15F6B5881E72A6FC007EF4FE /* FillMode.swift */,
+				15F6B5891E72A6FC007EF4FE /* Framebuffer.swift */,
+				15F6B58A1E72A6FC007EF4FE /* FramebufferCache.swift */,
+				15F6B58B1E72A6FC007EF4FE /* ImageGenerator.swift */,
+				15F6B58C1E72A6FC007EF4FE /* ImageOrientation.swift */,
+				15F6B58D1E72A6FC007EF4FE /* iOS */,
+				15F6B5961E72A6FC007EF4FE /* Linux */,
+				15F6B59E1E72A6FC007EF4FE /* Mac */,
+				15F6B5A61E72A6FC007EF4FE /* Matrix.swift */,
+				15F6B5A71E72A6FC007EF4FE /* OpenGLContext_Shared.swift */,
+				15F6B5A81E72A6FC007EF4FE /* OpenGLRendering.swift */,
+				15F6B5A91E72A6FC007EF4FE /* OperationGroup.swift */,
+				15F6B5AA1E72A6FC007EF4FE /* Operations */,
+				15F6B7321E72A6FD007EF4FE /* Pipeline.swift */,
+				15F6B7331E72A6FD007EF4FE /* Position.swift */,
+				15F6B7341E72A6FD007EF4FE /* RawDataInput.swift */,
+				15F6B7351E72A6FD007EF4FE /* RawDataOutput.swift */,
+				15F6B7361E72A6FD007EF4FE /* SerialDispatch.swift */,
+				15F6B7371E72A6FD007EF4FE /* ShaderProgram.swift */,
+				15F6B7381E72A6FD007EF4FE /* ShaderUniformSettings.swift */,
+				15F6B7391E72A6FD007EF4FE /* Size.swift */,
+				15F6B73A1E72A6FD007EF4FE /* TextureInput.swift */,
+				15F6B73B1E72A6FD007EF4FE /* TextureOutput.swift */,
+				15F6B73C1E72A6FD007EF4FE /* TextureSamplingOperation.swift */,
+				15F6B73D1E72A6FD007EF4FE /* Timestamp.swift */,
+				15F6B73E1E72A6FD007EF4FE /* TwoStageOperation.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		15F6B58D1E72A6FC007EF4FE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				15F6B58E1E72A6FC007EF4FE /* Camera.swift */,
+				15F6B58F1E72A6FC007EF4FE /* GPUImage.h */,
+				15F6B5901E72A6FC007EF4FE /* MovieInput.swift */,
+				15F6B5911E72A6FC007EF4FE /* MovieOutput.swift */,
+				15F6B5921E72A6FC007EF4FE /* OpenGLContext.swift */,
+				15F6B5931E72A6FC007EF4FE /* PictureInput.swift */,
+				15F6B5941E72A6FC007EF4FE /* PictureOutput.swift */,
+				15F6B5951E72A6FC007EF4FE /* RenderView.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		15F6B5961E72A6FC007EF4FE /* Linux */ = {
+			isa = PBXGroup;
+			children = (
+				15F6B5971E72A6FC007EF4FE /* GLUTRenderWindow.swift */,
+				15F6B5981E72A6FC007EF4FE /* OpenGLContext-RPi.swift */,
+				15F6B5991E72A6FC007EF4FE /* OpenGLContext.swift */,
+				15F6B59A1E72A6FC007EF4FE /* RPiRenderWindow.swift */,
+				15F6B59B1E72A6FC007EF4FE /* V4LCamera.swift */,
+				15F6B59C1E72A6FC007EF4FE /* v4lfuncs.c */,
+				15F6B59D1E72A6FC007EF4FE /* v4lfuncs.h */,
+			);
+			path = Linux;
+			sourceTree = "<group>";
+		};
+		15F6B59E1E72A6FC007EF4FE /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				15F6B59F1E72A6FC007EF4FE /* Camera.swift */,
+				15F6B5A01E72A6FC007EF4FE /* MovieInput.swift */,
+				15F6B5A11E72A6FC007EF4FE /* MovieOutput.swift */,
+				15F6B5A21E72A6FC007EF4FE /* OpenGLContext.swift */,
+				15F6B5A31E72A6FC007EF4FE /* PictureInput.swift */,
+				15F6B5A41E72A6FC007EF4FE /* PictureOutput.swift */,
+				15F6B5A51E72A6FC007EF4FE /* RenderView.swift */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		15F6B5AA1E72A6FC007EF4FE /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				15F6B5AB1E72A6FC007EF4FE /* AdaptiveThreshold.swift */,
+				15F6B5AC1E72A6FC007EF4FE /* AddBlend.swift */,
+				15F6B5AD1E72A6FC007EF4FE /* AlphaBlend.swift */,
+				15F6B5AE1E72A6FC007EF4FE /* AmatorkaFilter.swift */,
+				15F6B5AF1E72A6FC007EF4FE /* AverageColorExtractor.swift */,
+				15F6B5B01E72A6FC007EF4FE /* AverageLuminanceExtractor.swift */,
+				15F6B5B11E72A6FC007EF4FE /* AverageLuminanceThreshold.swift */,
+				15F6B5B21E72A6FC007EF4FE /* BilateralBlur.swift */,
+				15F6B5B31E72A6FC007EF4FE /* BoxBlur.swift */,
+				15F6B5B41E72A6FC007EF4FE /* BrightnessAdjustment.swift */,
+				15F6B5B51E72A6FC007EF4FE /* BulgeDistortion.swift */,
+				15F6B5B61E72A6FC007EF4FE /* CannyEdgeDetection.swift */,
+				15F6B5B71E72A6FC007EF4FE /* CGAColorspaceFilter.swift */,
+				15F6B5B81E72A6FC007EF4FE /* ChromaKeyBlend.swift */,
+				15F6B5B91E72A6FC007EF4FE /* ChromaKeying.swift */,
+				15F6B5BA1E72A6FC007EF4FE /* CircleGenerator.swift */,
+				15F6B5BB1E72A6FC007EF4FE /* ClosingFilter.swift */,
+				15F6B5BC1E72A6FC007EF4FE /* ColorBlend.swift */,
+				15F6B5BD1E72A6FC007EF4FE /* ColorBurnBlend.swift */,
+				15F6B5BE1E72A6FC007EF4FE /* ColorDodgeBlend.swift */,
+				15F6B5BF1E72A6FC007EF4FE /* ColorInversion.swift */,
+				15F6B5C01E72A6FC007EF4FE /* ColorLocalBinaryPattern.swift */,
+				15F6B5C11E72A6FC007EF4FE /* ColorMatrixFilter.swift */,
+				15F6B5C21E72A6FC007EF4FE /* ColourFASTFeatureDetection.swift */,
+				15F6B5C31E72A6FC007EF4FE /* ContrastAdjustment.swift */,
+				15F6B5C41E72A6FC007EF4FE /* Convolution3x3.swift */,
+				15F6B5C51E72A6FC007EF4FE /* Crop.swift */,
+				15F6B5C61E72A6FC007EF4FE /* CrosshairGenerator.swift */,
+				15F6B5C71E72A6FC007EF4FE /* Crosshatch.swift */,
+				15F6B5C81E72A6FC007EF4FE /* DarkenBlend.swift */,
+				15F6B5C91E72A6FC007EF4FE /* DifferenceBlend.swift */,
+				15F6B5CA1E72A6FC007EF4FE /* Dilation.swift */,
+				15F6B5CB1E72A6FC007EF4FE /* DissolveBlend.swift */,
+				15F6B5CC1E72A6FC007EF4FE /* DivideBlend.swift */,
+				15F6B5CD1E72A6FC007EF4FE /* EmbossFilter.swift */,
+				15F6B5CE1E72A6FC007EF4FE /* Erosion.swift */,
+				15F6B5CF1E72A6FC007EF4FE /* ExclusionBlend.swift */,
+				15F6B5D01E72A6FC007EF4FE /* ExposureAdjustment.swift */,
+				15F6B5D11E72A6FC007EF4FE /* FalseColor.swift */,
+				15F6B5D21E72A6FC007EF4FE /* GammaAdjustment.swift */,
+				15F6B5D31E72A6FC007EF4FE /* GaussianBlur.swift */,
+				15F6B5D41E72A6FC007EF4FE /* GlassSphereRefraction.swift */,
+				15F6B5D51E72A6FC007EF4FE /* Halftone.swift */,
+				15F6B5D61E72A6FC007EF4FE /* HardLightBlend.swift */,
+				15F6B5D71E72A6FC007EF4FE /* HarrisCornerDetector.swift */,
+				15F6B5D81E72A6FC007EF4FE /* Haze.swift */,
+				15F6B5D91E72A6FC007EF4FE /* HighlightAndShadowTint.swift */,
+				15F6B5DA1E72A6FC007EF4FE /* HighlightsAndShadows.swift */,
+				15F6B5DB1E72A6FC007EF4FE /* HighPassFilter.swift */,
+				15F6B5DC1E72A6FC007EF4FE /* Histogram.swift */,
+				15F6B5DD1E72A6FC007EF4FE /* HistogramDisplay.swift */,
+				15F6B5DE1E72A6FC007EF4FE /* HistogramEqualization.swift */,
+				15F6B5DF1E72A6FC007EF4FE /* HueAdjustment.swift */,
+				15F6B5E01E72A6FC007EF4FE /* HueBlend.swift */,
+				15F6B5E11E72A6FC007EF4FE /* ImageBuffer.swift */,
+				15F6B5E21E72A6FC007EF4FE /* iOSBlur.swift */,
+				15F6B5E31E72A6FC007EF4FE /* KuwaharaFilter.swift */,
+				15F6B5E41E72A6FC007EF4FE /* KuwaharaRadius3Filter.swift */,
+				15F6B5E51E72A6FC007EF4FE /* LanczosResampling.swift */,
+				15F6B5E61E72A6FC007EF4FE /* Laplacian.swift */,
+				15F6B5E71E72A6FC007EF4FE /* LevelsAdjustment.swift */,
+				15F6B5E81E72A6FC007EF4FE /* LightenBlend.swift */,
+				15F6B5E91E72A6FC007EF4FE /* LinearBurnBlend.swift */,
+				15F6B5EA1E72A6FC007EF4FE /* LineGenerator.swift */,
+				15F6B5EB1E72A6FC007EF4FE /* LocalBinaryPattern.swift */,
+				15F6B5EC1E72A6FC007EF4FE /* LookupFilter.swift */,
+				15F6B5ED1E72A6FC007EF4FE /* LookupImages */,
+				15F6B5F31E72A6FC007EF4FE /* LowPassFilter.swift */,
+				15F6B5F41E72A6FC007EF4FE /* Luminance.swift */,
+				15F6B5F51E72A6FC007EF4FE /* LuminanceRangeReduction.swift */,
+				15F6B5F61E72A6FC007EF4FE /* LuminanceThreshold.swift */,
+				15F6B5F71E72A6FC007EF4FE /* LuminosityBlend.swift */,
+				15F6B5F81E72A6FC007EF4FE /* MedianFilter.swift */,
+				15F6B5F91E72A6FC007EF4FE /* MissEtikateFilter.swift */,
+				15F6B5FA1E72A6FC007EF4FE /* MonochromeFilter.swift */,
+				15F6B5FB1E72A6FC007EF4FE /* MotionBlur.swift */,
+				15F6B5FC1E72A6FC007EF4FE /* MotionDetector.swift */,
+				15F6B5FD1E72A6FC007EF4FE /* MultiplyBlend.swift */,
+				15F6B5FE1E72A6FC007EF4FE /* NobleCornerDetector.swift */,
+				15F6B5FF1E72A6FC007EF4FE /* NormalBlend.swift */,
+				15F6B6001E72A6FC007EF4FE /* OpacityAdjustment.swift */,
+				15F6B6011E72A6FC007EF4FE /* OpeningFilter.swift */,
+				15F6B6021E72A6FC007EF4FE /* OverlayBlend.swift */,
+				15F6B6031E72A6FC007EF4FE /* PinchDistortion.swift */,
+				15F6B6041E72A6FC007EF4FE /* Pixellate.swift */,
+				15F6B6051E72A6FC007EF4FE /* PolarPixellate.swift */,
+				15F6B6061E72A6FC007EF4FE /* PolkaDot.swift */,
+				15F6B6071E72A6FC007EF4FE /* Posterize.swift */,
+				15F6B6081E72A6FC007EF4FE /* PrewittEdgeDetection.swift */,
+				15F6B6091E72A6FC007EF4FE /* RGBAdjustmentFilter.swift */,
+				15F6B60A1E72A6FC007EF4FE /* SaturationAdjustment.swift */,
+				15F6B60B1E72A6FC007EF4FE /* SaturationBlend.swift */,
+				15F6B60C1E72A6FC007EF4FE /* ScreenBlend.swift */,
+				15F6B60D1E72A6FC007EF4FE /* SepiaToneFilter.swift */,
+				15F6B60E1E72A6FC007EF4FE /* Shaders */,
+				15F6B7191E72A6FD007EF4FE /* Sharpen.swift */,
+				15F6B71A1E72A6FD007EF4FE /* ShiTomasiFeatureDetector.swift */,
+				15F6B71B1E72A6FD007EF4FE /* SingleComponentGaussianBlur.swift */,
+				15F6B71C1E72A6FD007EF4FE /* SketchFilter.swift */,
+				15F6B71D1E72A6FD007EF4FE /* SmoothToonFilter.swift */,
+				15F6B71E1E72A6FD007EF4FE /* SobelEdgeDetection.swift */,
+				15F6B71F1E72A6FD007EF4FE /* SoftElegance.swift */,
+				15F6B7201E72A6FD007EF4FE /* SoftLightBlend.swift */,
+				15F6B7211E72A6FD007EF4FE /* Solarize.swift */,
+				15F6B7221E72A6FD007EF4FE /* SolidColorGenerator.swift */,
+				15F6B7231E72A6FD007EF4FE /* SourceOverBlend.swift */,
+				15F6B7241E72A6FD007EF4FE /* SphereRefraction.swift */,
+				15F6B7251E72A6FD007EF4FE /* StretchDistortion.swift */,
+				15F6B7261E72A6FD007EF4FE /* SubtractBlend.swift */,
+				15F6B7271E72A6FD007EF4FE /* SwirlDistortion.swift */,
+				15F6B7281E72A6FD007EF4FE /* ThresholdSketch.swift */,
+				15F6B7291E72A6FD007EF4FE /* ThresholdSobelEdgeDetection.swift */,
+				15F6B72A1E72A6FD007EF4FE /* TiltShift.swift */,
+				15F6B72B1E72A6FD007EF4FE /* ToonFilter.swift */,
+				15F6B72C1E72A6FD007EF4FE /* TransformOperation.swift */,
+				15F6B72D1E72A6FD007EF4FE /* UnsharpMask.swift */,
+				15F6B72E1E72A6FD007EF4FE /* Vibrance.swift */,
+				15F6B72F1E72A6FD007EF4FE /* Vignette.swift */,
+				15F6B7301E72A6FD007EF4FE /* WhiteBalance.swift */,
+				15F6B7311E72A6FD007EF4FE /* ZoomBlur.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		15F6B5ED1E72A6FC007EF4FE /* LookupImages */ = {
+			isa = PBXGroup;
+			children = (
+				15F6B5EE1E72A6FC007EF4FE /* lookup.png */,
+				15F6B5EF1E72A6FC007EF4FE /* lookup_amatorka.png */,
+				15F6B5F01E72A6FC007EF4FE /* lookup_miss_etikate.png */,
+				15F6B5F11E72A6FC007EF4FE /* lookup_soft_elegance_1.png */,
+				15F6B5F21E72A6FC007EF4FE /* lookup_soft_elegance_2.png */,
+			);
+			path = LookupImages;
+			sourceTree = "<group>";
+		};
+		15F6B60E1E72A6FC007EF4FE /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				15F6B60F1E72A6FC007EF4FE /* AdaptiveThreshold_GL.fsh */,
+				15F6B6101E72A6FC007EF4FE /* AdaptiveThreshold_GLES.fsh */,
+				15F6B6111E72A6FC007EF4FE /* AddBlend_GL.fsh */,
+				15F6B6121E72A6FC007EF4FE /* AddBlend_GLES.fsh */,
+				15F6B6131E72A6FC007EF4FE /* AlphaBlend_GL.fsh */,
+				15F6B6141E72A6FC007EF4FE /* AlphaBlend_GLES.fsh */,
+				15F6B6151E72A6FC007EF4FE /* AlphaTest_GL.fsh */,
+				15F6B6161E72A6FC007EF4FE /* AlphaTest_GLES.fsh */,
+				15F6B6171E72A6FC007EF4FE /* AverageColor.vsh */,
+				15F6B6181E72A6FC007EF4FE /* AverageColor_GL.fsh */,
+				15F6B6191E72A6FC007EF4FE /* AverageColor_GLES.fsh */,
+				15F6B61A1E72A6FC007EF4FE /* AverageLuminance_GL.fsh */,
+				15F6B61B1E72A6FC007EF4FE /* AverageLuminance_GLES.fsh */,
+				15F6B61C1E72A6FC007EF4FE /* BilateralBlur.vsh */,
+				15F6B61D1E72A6FC007EF4FE /* BilateralBlur_GL.fsh */,
+				15F6B61E1E72A6FC007EF4FE /* BilateralBlur_GLES.fsh */,
+				15F6B61F1E72A6FC007EF4FE /* Brightness_GL.fsh */,
+				15F6B6201E72A6FC007EF4FE /* Brightness_GLES.fsh */,
+				15F6B6211E72A6FC007EF4FE /* BulgeDistortion_GL.fsh */,
+				15F6B6221E72A6FC007EF4FE /* BulgeDistortion_GLES.fsh */,
+				15F6B6231E72A6FC007EF4FE /* CGAColorspace_GL.fsh */,
+				15F6B6241E72A6FC007EF4FE /* CGAColorspace_GLES.fsh */,
+				15F6B6251E72A6FC007EF4FE /* ChromaKey_GL.fsh */,
+				15F6B6261E72A6FC007EF4FE /* ChromaKey_GLES.fsh */,
+				15F6B6271E72A6FC007EF4FE /* ChromaKeyBlend_GL.fsh */,
+				15F6B6281E72A6FC007EF4FE /* ChromaKeyBlend_GLES.fsh */,
+				15F6B6291E72A6FC007EF4FE /* Circle.vsh */,
+				15F6B62A1E72A6FC007EF4FE /* Circle_GL.fsh */,
+				15F6B62B1E72A6FC007EF4FE /* Circle_GLES.fsh */,
+				15F6B62C1E72A6FC007EF4FE /* ColorBlend_GL.fsh */,
+				15F6B62D1E72A6FC007EF4FE /* ColorBlend_GLES.fsh */,
+				15F6B62E1E72A6FC007EF4FE /* ColorBurnBlend_GL.fsh */,
+				15F6B62F1E72A6FC007EF4FE /* ColorBurnBlend_GLES.fsh */,
+				15F6B6301E72A6FC007EF4FE /* ColorDodgeBlend_GL.fsh */,
+				15F6B6311E72A6FC007EF4FE /* ColorDodgeBlend_GLES.fsh */,
+				15F6B6321E72A6FC007EF4FE /* ColorInvert_GL.fsh */,
+				15F6B6331E72A6FC007EF4FE /* ColorInvert_GLES.fsh */,
+				15F6B6341E72A6FC007EF4FE /* ColorLocalBinaryPattern_GL.fsh */,
+				15F6B6351E72A6FC007EF4FE /* ColorLocalBinaryPattern_GLES.fsh */,
+				15F6B6361E72A6FC007EF4FE /* ColorMatrix_GL.fsh */,
+				15F6B6371E72A6FC007EF4FE /* ColorMatrix_GLES.fsh */,
+				15F6B6381E72A6FC007EF4FE /* ColorSwizzling_GL.fsh */,
+				15F6B6391E72A6FC007EF4FE /* ColorSwizzling_GLES.fsh */,
+				15F6B63A1E72A6FC007EF4FE /* ColourFASTDecriptor.vsh */,
+				15F6B63B1E72A6FC007EF4FE /* ColourFASTDecriptor_GL.fsh */,
+				15F6B63C1E72A6FC007EF4FE /* ColourFASTDecriptor_GLES.fsh */,
+				15F6B63D1E72A6FC007EF4FE /* Contrast_GL.fsh */,
+				15F6B63E1E72A6FC007EF4FE /* Contrast_GLES.fsh */,
+				15F6B63F1E72A6FC007EF4FE /* ConvertedShaders_GL.swift */,
+				15F6B6401E72A6FC007EF4FE /* ConvertedShaders_GLES.swift */,
+				15F6B6411E72A6FC007EF4FE /* Convolution3x3_GL.fsh */,
+				15F6B6421E72A6FC007EF4FE /* Convolution3x3_GLES.fsh */,
+				15F6B6431E72A6FC007EF4FE /* Crosshair.vsh */,
+				15F6B6441E72A6FC007EF4FE /* Crosshair_GL.fsh */,
+				15F6B6451E72A6FC007EF4FE /* Crosshair_GLES.fsh */,
+				15F6B6461E72A6FC007EF4FE /* Crosshatch_GL.fsh */,
+				15F6B6471E72A6FC007EF4FE /* Crosshatch_GLES.fsh */,
+				15F6B6481E72A6FC007EF4FE /* DarkenBlend_GL.fsh */,
+				15F6B6491E72A6FC007EF4FE /* DarkenBlend_GLES.fsh */,
+				15F6B64A1E72A6FC007EF4FE /* DifferenceBlend_GL.fsh */,
+				15F6B64B1E72A6FC007EF4FE /* DifferenceBlend_GLES.fsh */,
+				15F6B64C1E72A6FC007EF4FE /* Dilation1_GL.fsh */,
+				15F6B64D1E72A6FC007EF4FE /* Dilation1_GLES.fsh */,
+				15F6B64E1E72A6FC007EF4FE /* Dilation2_GL.fsh */,
+				15F6B64F1E72A6FC007EF4FE /* Dilation2_GLES.fsh */,
+				15F6B6501E72A6FC007EF4FE /* Dilation3_GL.fsh */,
+				15F6B6511E72A6FC007EF4FE /* Dilation3_GLES.fsh */,
+				15F6B6521E72A6FC007EF4FE /* Dilation4_GL.fsh */,
+				15F6B6531E72A6FC007EF4FE /* Dilation4_GLES.fsh */,
+				15F6B6541E72A6FC007EF4FE /* DirectionalNonMaximumSuppression_GL.fsh */,
+				15F6B6551E72A6FC007EF4FE /* DirectionalNonMaximumSuppression_GLES.fsh */,
+				15F6B6561E72A6FC007EF4FE /* DirectionalSobelEdgeDetection_GL.fsh */,
+				15F6B6571E72A6FC007EF4FE /* DirectionalSobelEdgeDetection_GLES.fsh */,
+				15F6B6581E72A6FC007EF4FE /* DissolveBlend_GL.fsh */,
+				15F6B6591E72A6FC007EF4FE /* DissolveBlend_GLES.fsh */,
+				15F6B65A1E72A6FC007EF4FE /* DivideBlend_GL.fsh */,
+				15F6B65B1E72A6FC007EF4FE /* DivideBlend_GLES.fsh */,
+				15F6B65C1E72A6FC007EF4FE /* Erosion1_GL.fsh */,
+				15F6B65D1E72A6FC007EF4FE /* Erosion1_GLES.fsh */,
+				15F6B65E1E72A6FC007EF4FE /* Erosion2_GL.fsh */,
+				15F6B65F1E72A6FC007EF4FE /* Erosion2_GLES.fsh */,
+				15F6B6601E72A6FC007EF4FE /* Erosion3_GL.fsh */,
+				15F6B6611E72A6FC007EF4FE /* Erosion3_GLES.fsh */,
+				15F6B6621E72A6FC007EF4FE /* Erosion4_GL.fsh */,
+				15F6B6631E72A6FC007EF4FE /* Erosion4_GLES.fsh */,
+				15F6B6641E72A6FC007EF4FE /* ErosionDilation1.vsh */,
+				15F6B6651E72A6FC007EF4FE /* ErosionDilation2.vsh */,
+				15F6B6661E72A6FC007EF4FE /* ErosionDilation3.vsh */,
+				15F6B6671E72A6FC007EF4FE /* ErosionDilation4.vsh */,
+				15F6B6681E72A6FC007EF4FE /* ExclusionBlend_GL.fsh */,
+				15F6B6691E72A6FC007EF4FE /* ExclusionBlend_GLES.fsh */,
+				15F6B66A1E72A6FC007EF4FE /* Exposure_GL.fsh */,
+				15F6B66B1E72A6FC007EF4FE /* Exposure_GLES.fsh */,
+				15F6B66C1E72A6FC007EF4FE /* FalseColor_GL.fsh */,
+				15F6B66D1E72A6FC007EF4FE /* FalseColor_GLES.fsh */,
+				15F6B66E1E72A6FC007EF4FE /* FiveInput.vsh */,
+				15F6B66F1E72A6FC007EF4FE /* FourInput.vsh */,
+				15F6B6701E72A6FC007EF4FE /* Gamma_GL.fsh */,
+				15F6B6711E72A6FC007EF4FE /* Gamma_GLES.fsh */,
+				15F6B6721E72A6FC007EF4FE /* GlassSphere_GL.fsh */,
+				15F6B6731E72A6FC007EF4FE /* GlassSphere_GLES.fsh */,
+				15F6B6741E72A6FC007EF4FE /* Halftone_GL.fsh */,
+				15F6B6751E72A6FC007EF4FE /* Halftone_GLES.fsh */,
+				15F6B6761E72A6FC007EF4FE /* HardLightBlend_GL.fsh */,
+				15F6B6771E72A6FC007EF4FE /* HardLightBlend_GLES.fsh */,
+				15F6B6781E72A6FC007EF4FE /* HarrisCornerDetector_GL.fsh */,
+				15F6B6791E72A6FC007EF4FE /* HarrisCornerDetector_GLES.fsh */,
+				15F6B67A1E72A6FC007EF4FE /* Haze_GL.fsh */,
+				15F6B67B1E72A6FC007EF4FE /* Haze_GLES.fsh */,
+				15F6B67C1E72A6FC007EF4FE /* HighlightShadow_GL.fsh */,
+				15F6B67D1E72A6FC007EF4FE /* HighlightShadow_GLES.fsh */,
+				15F6B67E1E72A6FC007EF4FE /* HighlightShadowTint_GL.fsh */,
+				15F6B67F1E72A6FC007EF4FE /* HighlightShadowTint_GLES.fsh */,
+				15F6B6801E72A6FC007EF4FE /* HistogramAccumulation_GL.fsh */,
+				15F6B6811E72A6FC007EF4FE /* HistogramAccumulation_GLES.fsh */,
+				15F6B6821E72A6FC007EF4FE /* HistogramBlueSampling.vsh */,
+				15F6B6831E72A6FC007EF4FE /* HistogramDisplay.vsh */,
+				15F6B6841E72A6FC007EF4FE /* HistogramDisplay_GL.fsh */,
+				15F6B6851E72A6FC007EF4FE /* HistogramDisplay_GLES.fsh */,
+				15F6B6861E72A6FC007EF4FE /* HistogramEqualizationBlue_GL.fsh */,
+				15F6B6871E72A6FC007EF4FE /* HistogramEqualizationBlue_GLES.fsh */,
+				15F6B6881E72A6FC007EF4FE /* HistogramEqualizationGreen_GL.fsh */,
+				15F6B6891E72A6FC007EF4FE /* HistogramEqualizationGreen_GLES.fsh */,
+				15F6B68A1E72A6FC007EF4FE /* HistogramEqualizationLuminance_GL.fsh */,
+				15F6B68B1E72A6FC007EF4FE /* HistogramEqualizationLuminance_GLES.fsh */,
+				15F6B68C1E72A6FC007EF4FE /* HistogramEqualizationRed_GL.fsh */,
+				15F6B68D1E72A6FC007EF4FE /* HistogramEqualizationRed_GLES.fsh */,
+				15F6B68E1E72A6FC007EF4FE /* HistogramEqualizationRGB_GL.fsh */,
+				15F6B68F1E72A6FC007EF4FE /* HistogramEqualizationRGB_GLES.fsh */,
+				15F6B6901E72A6FC007EF4FE /* HistogramGreenSampling.vsh */,
+				15F6B6911E72A6FC007EF4FE /* HistogramLuminanceSampling.vsh */,
+				15F6B6921E72A6FC007EF4FE /* HistogramRedSampling.vsh */,
+				15F6B6931E72A6FC007EF4FE /* Hue_GL.fsh */,
+				15F6B6941E72A6FC007EF4FE /* Hue_GLES.fsh */,
+				15F6B6951E72A6FC007EF4FE /* HueBlend_GL.fsh */,
+				15F6B6961E72A6FC007EF4FE /* HueBlend_GLES.fsh */,
+				15F6B6971E72A6FC007EF4FE /* Kuwahara_GL.fsh */,
+				15F6B6981E72A6FC007EF4FE /* Kuwahara_GLES.fsh */,
+				15F6B6991E72A6FC007EF4FE /* KuwaharaRadius3_GL.fsh */,
+				15F6B69A1E72A6FC007EF4FE /* KuwaharaRadius3_GLES.fsh */,
+				15F6B69B1E72A6FC007EF4FE /* LanczosResampling.vsh */,
+				15F6B69C1E72A6FC007EF4FE /* LanczosResampling_GL.fsh */,
+				15F6B69D1E72A6FC007EF4FE /* LanczosResampling_GLES.fsh */,
+				15F6B69E1E72A6FC007EF4FE /* Laplacian_GL.fsh */,
+				15F6B69F1E72A6FC007EF4FE /* Laplacian_GLES.fsh */,
+				15F6B6A01E72A6FC007EF4FE /* Levels_GL.fsh */,
+				15F6B6A11E72A6FC007EF4FE /* Levels_GLES.fsh */,
+				15F6B6A21E72A6FC007EF4FE /* LightenBlend_GL.fsh */,
+				15F6B6A31E72A6FC007EF4FE /* LightenBlend_GLES.fsh */,
+				15F6B6A41E72A6FC007EF4FE /* Line.vsh */,
+				15F6B6A51E72A6FC007EF4FE /* Line_GL.fsh */,
+				15F6B6A61E72A6FC007EF4FE /* Line_GLES.fsh */,
+				15F6B6A71E72A6FC007EF4FE /* LinearBurnBlend_GL.fsh */,
+				15F6B6A81E72A6FC007EF4FE /* LinearBurnBlend_GLES.fsh */,
+				15F6B6A91E72A6FC007EF4FE /* LocalBinaryPattern_GL.fsh */,
+				15F6B6AA1E72A6FC007EF4FE /* LocalBinaryPattern_GLES.fsh */,
+				15F6B6AB1E72A6FC007EF4FE /* Lookup_GL.fsh */,
+				15F6B6AC1E72A6FC007EF4FE /* Lookup_GLES.fsh */,
+				15F6B6AD1E72A6FC007EF4FE /* Luminance_GL.fsh */,
+				15F6B6AE1E72A6FC007EF4FE /* Luminance_GLES.fsh */,
+				15F6B6AF1E72A6FC007EF4FE /* LuminanceRange_GL.fsh */,
+				15F6B6B01E72A6FC007EF4FE /* LuminanceRange_GLES.fsh */,
+				15F6B6B11E72A6FC007EF4FE /* LuminanceThreshold_GL.fsh */,
+				15F6B6B21E72A6FC007EF4FE /* LuminanceThreshold_GLES.fsh */,
+				15F6B6B31E72A6FC007EF4FE /* LuminosityBlend_GL.fsh */,
+				15F6B6B41E72A6FC007EF4FE /* LuminosityBlend_GLES.fsh */,
+				15F6B6B51E72A6FC007EF4FE /* Median_GL.fsh */,
+				15F6B6B61E72A6FC007EF4FE /* Median_GLES.fsh */,
+				15F6B6B71E72A6FC007EF4FE /* Monochrome_GL.fsh */,
+				15F6B6B81E72A6FC007EF4FE /* Monochrome_GLES.fsh */,
+				15F6B6B91E72A6FC007EF4FE /* MotionBlur.vsh */,
+				15F6B6BA1E72A6FC007EF4FE /* MotionBlur_GL.fsh */,
+				15F6B6BB1E72A6FC007EF4FE /* MotionBlur_GLES.fsh */,
+				15F6B6BC1E72A6FC007EF4FE /* MotionComparison_GL.fsh */,
+				15F6B6BD1E72A6FC007EF4FE /* MotionComparison_GLES.fsh */,
+				15F6B6BE1E72A6FC007EF4FE /* MultiplyBlend_GL.fsh */,
+				15F6B6BF1E72A6FC007EF4FE /* MultiplyBlend_GLES.fsh */,
+				15F6B6C01E72A6FC007EF4FE /* NearbyTexelSampling.vsh */,
+				15F6B6C11E72A6FC007EF4FE /* NobleCornerDetector_GL.fsh */,
+				15F6B6C21E72A6FC007EF4FE /* NobleCornerDetector_GLES.fsh */,
+				15F6B6C31E72A6FC007EF4FE /* NormalBlend_GL.fsh */,
+				15F6B6C41E72A6FC007EF4FE /* NormalBlend_GLES.fsh */,
+				15F6B6C51E72A6FC007EF4FE /* OneInput.vsh */,
+				15F6B6C61E72A6FC007EF4FE /* Opacity_GL.fsh */,
+				15F6B6C71E72A6FC007EF4FE /* Opacity_GLES.fsh */,
+				15F6B6C81E72A6FC007EF4FE /* OverlayBlend_GL.fsh */,
+				15F6B6C91E72A6FC007EF4FE /* OverlayBlend_GLES.fsh */,
+				15F6B6CA1E72A6FC007EF4FE /* Passthrough_GL.fsh */,
+				15F6B6CB1E72A6FC007EF4FE /* Passthrough_GLES.fsh */,
+				15F6B6CC1E72A6FC007EF4FE /* PinchDistortion_GL.fsh */,
+				15F6B6CD1E72A6FC007EF4FE /* PinchDistortion_GLES.fsh */,
+				15F6B6CE1E72A6FC007EF4FE /* Pixellate_GL.fsh */,
+				15F6B6CF1E72A6FC007EF4FE /* Pixellate_GLES.fsh */,
+				15F6B6D01E72A6FC007EF4FE /* PolarPixellate_GL.fsh */,
+				15F6B6D11E72A6FC007EF4FE /* PolarPixellate_GLES.fsh */,
+				15F6B6D21E72A6FC007EF4FE /* PolkaDot_GL.fsh */,
+				15F6B6D31E72A6FC007EF4FE /* PolkaDot_GLES.fsh */,
+				15F6B6D41E72A6FC007EF4FE /* Posterize_GL.fsh */,
+				15F6B6D51E72A6FC007EF4FE /* Posterize_GLES.fsh */,
+				15F6B6D61E72A6FC007EF4FE /* PrewittEdgeDetection_GL.fsh */,
+				15F6B6D71E72A6FC007EF4FE /* PrewittEdgeDetection_GLES.fsh */,
+				15F6B6D81E72A6FC007EF4FE /* RGBAdjustment_GL.fsh */,
+				15F6B6D91E72A6FC007EF4FE /* RGBAdjustment_GLES.fsh */,
+				15F6B6DA1E72A6FC007EF4FE /* Saturation_GL.fsh */,
+				15F6B6DB1E72A6FC007EF4FE /* Saturation_GLES.fsh */,
+				15F6B6DC1E72A6FC007EF4FE /* SaturationBlend_GL.fsh */,
+				15F6B6DD1E72A6FC007EF4FE /* SaturationBlend_GLES.fsh */,
+				15F6B6DE1E72A6FC007EF4FE /* ScreenBlend_GL.fsh */,
+				15F6B6DF1E72A6FC007EF4FE /* ScreenBlend_GLES.fsh */,
+				15F6B6E01E72A6FC007EF4FE /* ShaderConverter.sh */,
+				15F6B6E11E72A6FC007EF4FE /* Sharpen.vsh */,
+				15F6B6E21E72A6FC007EF4FE /* Sharpen_GL.fsh */,
+				15F6B6E31E72A6FC007EF4FE /* Sharpen_GLES.fsh */,
+				15F6B6E41E72A6FC007EF4FE /* ShiTomasiFeatureDetector_GL.fsh */,
+				15F6B6E51E72A6FC007EF4FE /* ShiTomasiFeatureDetector_GLES.fsh */,
+				15F6B6E61E72A6FC007EF4FE /* Sketch_GL.fsh */,
+				15F6B6E71E72A6FC007EF4FE /* Sketch_GLES.fsh */,
+				15F6B6E81E72A6FC007EF4FE /* SobelEdgeDetection_GL.fsh */,
+				15F6B6E91E72A6FC007EF4FE /* SobelEdgeDetection_GLES.fsh */,
+				15F6B6EA1E72A6FC007EF4FE /* SoftLightBlend_GL.fsh */,
+				15F6B6EB1E72A6FC007EF4FE /* SoftLightBlend_GLES.fsh */,
+				15F6B6EC1E72A6FC007EF4FE /* Solarize_GL.fsh */,
+				15F6B6ED1E72A6FC007EF4FE /* Solarize_GLES.fsh */,
+				15F6B6EE1E72A6FC007EF4FE /* SourceOverBlend_GL.fsh */,
+				15F6B6EF1E72A6FC007EF4FE /* SourceOverBlend_GLES.fsh */,
+				15F6B6F01E72A6FC007EF4FE /* SphereRefraction_GL.fsh */,
+				15F6B6F11E72A6FC007EF4FE /* SphereRefraction_GLES.fsh */,
+				15F6B6F21E72A6FC007EF4FE /* StretchDistortion_GL.fsh */,
+				15F6B6F31E72A6FC007EF4FE /* StretchDistortion_GLES.fsh */,
+				15F6B6F41E72A6FC007EF4FE /* SubtractBlend_GL.fsh */,
+				15F6B6F51E72A6FC007EF4FE /* SubtractBlend_GLES.fsh */,
+				15F6B6F61E72A6FC007EF4FE /* Swirl_GL.fsh */,
+				15F6B6F71E72A6FC007EF4FE /* Swirl_GLES.fsh */,
+				15F6B6F81E72A6FC007EF4FE /* ThreeInput.vsh */,
+				15F6B6F91E72A6FC007EF4FE /* ThresholdEdgeDetection_GL.fsh */,
+				15F6B6FA1E72A6FC007EF4FE /* ThresholdEdgeDetection_GLES.fsh */,
+				15F6B6FB1E72A6FC007EF4FE /* ThresholdedNonMaximumSuppression_GL.fsh */,
+				15F6B6FC1E72A6FC007EF4FE /* ThresholdedNonMaximumSuppression_GLES.fsh */,
+				15F6B6FD1E72A6FC007EF4FE /* ThresholdSketch_GL.fsh */,
+				15F6B6FE1E72A6FC007EF4FE /* ThresholdSketch_GLES.fsh */,
+				15F6B6FF1E72A6FC007EF4FE /* TiltShift_GL.fsh */,
+				15F6B7001E72A6FC007EF4FE /* TiltShift_GLES.fsh */,
+				15F6B7011E72A6FC007EF4FE /* Toon_GL.fsh */,
+				15F6B7021E72A6FC007EF4FE /* Toon_GLES.fsh */,
+				15F6B7031E72A6FC007EF4FE /* Transform.vsh */,
+				15F6B7041E72A6FC007EF4FE /* TwoInput.vsh */,
+				15F6B7051E72A6FC007EF4FE /* UnsharpMask_GL.fsh */,
+				15F6B7061E72A6FC007EF4FE /* UnsharpMask_GLES.fsh */,
+				15F6B7071E72A6FC007EF4FE /* Vibrance_GL.fsh */,
+				15F6B7081E72A6FC007EF4FE /* Vibrance_GLES.fsh */,
+				15F6B7091E72A6FC007EF4FE /* Vignette_GL.fsh */,
+				15F6B70A1E72A6FC007EF4FE /* Vignette_GLES.fsh */,
+				15F6B70B1E72A6FC007EF4FE /* WeakPixelInclusion_GL.fsh */,
+				15F6B70C1E72A6FC007EF4FE /* WeakPixelInclusion_GLES.fsh */,
+				15F6B70D1E72A6FC007EF4FE /* WhiteBalance_GL.fsh */,
+				15F6B70E1E72A6FC007EF4FE /* WhiteBalance_GLES.fsh */,
+				15F6B70F1E72A6FC007EF4FE /* XYDerivative_GL.fsh */,
+				15F6B7101E72A6FC007EF4FE /* XYDerivative_GLES.fsh */,
+				15F6B7111E72A6FC007EF4FE /* YUVConversionFullRange_GL.fsh */,
+				15F6B7121E72A6FC007EF4FE /* YUVConversionFullRange_GLES.fsh */,
+				15F6B7131E72A6FC007EF4FE /* YUVConversionFullRangeUVPlanar_GL.fsh */,
+				15F6B7141E72A6FD007EF4FE /* YUVConversionFullRangeUVPlanar_GLES.fsh */,
+				15F6B7151E72A6FD007EF4FE /* YUVConversionVideoRange_GL.fsh */,
+				15F6B7161E72A6FD007EF4FE /* YUVConversionVideoRange_GLES.fsh */,
+				15F6B7171E72A6FD007EF4FE /* ZoomBlur_GL.fsh */,
+				15F6B7181E72A6FD007EF4FE /* ZoomBlur_GLES.fsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		15F6B73F1E72A6FD007EF4FE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				15F6B7401E72A6FD007EF4FE /* Pipeline_Tests.swift */,
+				15F6B7411E72A6FD007EF4FE /* ShaderProgram_Tests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		1BBA76861E729F2E00B2D37B /* Interface */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +1361,7 @@
 		1BCA2F001DE874430037AF13 /* VideoEditing */ = {
 			isa = PBXGroup;
 			children = (
+				15F6AE1C1E72A584007EF4FE /* External */,
 				153B2A311E291B4300FF0211 /* Resources */,
 				1BCA2F011DE874430037AF13 /* AppDelegate.swift */,
 				1BCA2F031DE874430037AF13 /* ViewController.swift */,
@@ -307,6 +1405,7 @@
 				1BCA2EFB1DE874430037AF13 /* Frameworks */,
 				1BCA2EFC1DE874430037AF13 /* Resources */,
 				1BCA2F241DE874CE0037AF13 /* Embed Frameworks */,
+				15F6B1C41E72A649007EF4FE /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -368,6 +1467,12 @@
 			mainGroup = 1BCA2EF51DE874430037AF13;
 			productRefGroup = 1BCA2EFF1DE874430037AF13 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 15F6B56D1E72A6FC007EF4FE /* Products */;
+					ProjectRef = 15F6B56C1E72A6FC007EF4FE /* GPUImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1BCA2EFD1DE874430037AF13 /* VideoEditing */,
@@ -375,6 +1480,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		15F6B7471E72A6FD007EF4FE /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 15F6B7461E72A6FD007EF4FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		15F6B7491E72A6FD007EF4FE /* GPUImageTests_macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GPUImageTests_macOS.xctest;
+			remoteRef = 15F6B7481E72A6FD007EF4FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		15F6B74B1E72A6FD007EF4FE /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 15F6B74A1E72A6FD007EF4FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		15F6B74D1E72A6FD007EF4FE /* GPUImageTests_iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GPUImageTests_iOS.xctest;
+			remoteRef = 15F6B74C1E72A6FD007EF4FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1BCA2EFC1DE874430037AF13 /* Resources */ = {
