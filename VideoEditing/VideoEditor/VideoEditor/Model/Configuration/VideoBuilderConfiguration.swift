@@ -23,14 +23,14 @@ enum VideoSize {
     case FullHD
     case UHD4K
     
-    func size() -> (width: Int, height: Int) {
+    func size() -> Resolution {
         switch self {
         case .HD:
-            return (1280, 720)
+            return Resolution(width: 1280, height: 720)
         case .FullHD:
-            return (1920,1080)
+            return Resolution(width: 1920,height: 1080)
         case .UHD4K:
-            return (3840,2160)
+            return Resolution(width: 3840,height: 2160)
         }
     }
 }

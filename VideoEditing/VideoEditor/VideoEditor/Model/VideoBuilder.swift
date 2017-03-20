@@ -10,11 +10,11 @@ import Foundation
 import AVFoundation
 
 class VideoBuilder{
-
-    var handler: VideoBuilderInteface?
+    
+    var handler: DDVideoHandler? = DDVideoHandler()
     
     func createVideo(fromAssets assets: [Asset], configuration: VideoBuilderConfiguration) -> String? {
-        var avassetArray: [AVAsset] = []
+        var avassetArray: [Asset] = []
         for asset in assets {
             if let avasset = handler?.applyEffect(asset: asset) {
                 avassetArray.append(avasset)
@@ -24,5 +24,4 @@ class VideoBuilder{
         let videoURL = handler?.createVideo(assets: avassetArray)
         return videoURL
     }
-    
 }

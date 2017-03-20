@@ -9,14 +9,17 @@
 import UIKit
 import AVFoundation
 
-class DDVideoHandler : VideoBuilderInteface {
 
-    func applyEffect(asset: Asset) -> AVAsset? {
-        return nil
+class DDVideoHandler : VideoBuilderInteface {
+    
+    func applyEffect(asset: Asset) -> Asset? {
+        return asset
     }
     
-    func createVideo(assets: [AVAsset]) -> String? {
-        return nil
+    func createVideo(assets: [Asset]) -> String? {
+        let settings = RenderSettings()
+                let imageAnimator = ImageAnimator(renderSettings: settings)
+                imageAnimator.images = assets
+                return imageAnimator.render()
     }
-    
 }

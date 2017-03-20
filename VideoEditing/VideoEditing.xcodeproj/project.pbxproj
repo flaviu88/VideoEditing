@@ -43,6 +43,7 @@
 		153B2A501E291BB000FF0211 /* frame10.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 153B2A3B1E291BB000FF0211 /* frame10.JPG */; };
 		153B2A511E291BB000FF0211 /* frame11.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 153B2A3C1E291BB000FF0211 /* frame11.JPG */; };
 		153B2A521E291BB000FF0211 /* frame11.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 153B2A3C1E291BB000FF0211 /* frame11.JPG */; };
+		15A2119C1E53366F006421B6 /* Happy-electronic-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 15A2119B1E53366F006421B6 /* Happy-electronic-music.mp3 */; };
 		15AA0E961E39F65F009CF649 /* VideoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA0E951E39F65F009CF649 /* VideoAsset.swift */; };
 		15AA0E971E39F65F009CF649 /* VideoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA0E951E39F65F009CF649 /* VideoAsset.swift */; };
 		15AA0E9D1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA0E9C1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift */; };
@@ -61,6 +62,13 @@
 		1BCA2F1C1DE874CE0037AF13 /* VideoEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BCA2F1A1DE874CE0037AF13 /* VideoEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1BCA2F1F1DE874CE0037AF13 /* VideoEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCA2F181DE874CE0037AF13 /* VideoEditor.framework */; };
 		1BCA2F201DE874CE0037AF13 /* VideoEditor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCA2F181DE874CE0037AF13 /* VideoEditor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E80E08BA1E72F7E700031728 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 15F6B74B1E72A6FD007EF4FE /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E80E08C71E72FF7800031728 /* RenderSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80E08C51E72FEA900031728 /* RenderSettings.swift */; };
+		E80E08C81E72FFA400031728 /* RenderSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80E08C51E72FEA900031728 /* RenderSettings.swift */; };
+		E80E08C91E72FFA600031728 /* ImageAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D2CE21E5B234B00B85A70 /* ImageAnimator.swift */; };
+		E80E08CA1E72FFA900031728 /* VideoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D2CDF1E5B233400B85A70 /* VideoWriter.swift */; };
+		E87D2CE01E5B233400B85A70 /* VideoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D2CDF1E5B233400B85A70 /* VideoWriter.swift */; };
+		E87D2CE31E5B234B00B85A70 /* ImageAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D2CE21E5B234B00B85A70 /* ImageAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +107,13 @@
 			remoteGlobalIDString = 1BCA2F171DE874CE0037AF13;
 			remoteInfo = VideoEditor;
 		};
+		E80E08B41E72F7D000031728 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15F6B56C1E72A6FC007EF4FE /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9E34E81E524A2200B8604F;
+			remoteInfo = GPUImage_iOS;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -108,6 +123,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				E80E08BA1E72F7E700031728 /* GPUImage.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +160,7 @@
 		153B2A3A1E291BB000FF0211 /* frame9.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame9.JPG; sourceTree = "<group>"; };
 		153B2A3B1E291BB000FF0211 /* frame10.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame10.JPG; sourceTree = "<group>"; };
 		153B2A3C1E291BB000FF0211 /* frame11.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame11.JPG; sourceTree = "<group>"; };
+		15A2119B1E53366F006421B6 /* Happy-electronic-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Happy-electronic-music.mp3"; sourceTree = "<group>"; };
 		15AA0E951E39F65F009CF649 /* VideoAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoAsset.swift; sourceTree = "<group>"; };
 		15AA0E9C1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoBuilderConfiguration.swift; sourceTree = "<group>"; };
 		15F6B56A1E72A6FC007EF4FE /* compile-LinuxGL.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "compile-LinuxGL.sh"; sourceTree = "<group>"; };
@@ -615,6 +632,9 @@
 		1BCA2F181DE874CE0037AF13 /* VideoEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VideoEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BCA2F1A1DE874CE0037AF13 /* VideoEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoEditor.h; sourceTree = "<group>"; };
 		1BCA2F1B1DE874CE0037AF13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E80E08C51E72FEA900031728 /* RenderSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderSettings.swift; sourceTree = "<group>"; };
+		E87D2CDF1E5B233400B85A70 /* VideoWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoWriter.swift; sourceTree = "<group>"; };
+		E87D2CE21E5B234B00B85A70 /* ImageAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -647,6 +667,7 @@
 		153B2A171E29177E00FF0211 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E80E08C11E72FA3F00031728 /* DDVideoWriter */,
 				1BBA76891E72A0B500B2D37B /* Handler */,
 				1BBA76861E729F2E00B2D37B /* Interface */,
 				15AA0E981E39F6B9009CF649 /* Configuration */,
@@ -697,6 +718,7 @@
 		153B2A311E291B4300FF0211 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				15A2119B1E53366F006421B6 /* Happy-electronic-music.mp3 */,
 				153B2A321E291BB000FF0211 /* frame1.JPG */,
 				153B2A331E291BB000FF0211 /* frame2.JPG */,
 				153B2A341E291BB000FF0211 /* frame3.JPG */,
@@ -1390,6 +1412,16 @@
 			path = VideoEditor;
 			sourceTree = "<group>";
 		};
+		E80E08C11E72FA3F00031728 /* DDVideoWriter */ = {
+			isa = PBXGroup;
+			children = (
+				E87D2CDF1E5B233400B85A70 /* VideoWriter.swift */,
+				E87D2CE21E5B234B00B85A70 /* ImageAnimator.swift */,
+				E80E08C51E72FEA900031728 /* RenderSettings.swift */,
+			);
+			name = DDVideoWriter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1417,6 +1449,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E80E08B51E72F7D000031728 /* PBXTargetDependency */,
 				1BCA2F1E1DE874CE0037AF13 /* PBXTargetDependency */,
 			);
 			name = VideoEditing;
@@ -1531,6 +1564,7 @@
 				153B2A3D1E291BB000FF0211 /* frame1.JPG in Resources */,
 				153B2A4D1E291BB000FF0211 /* frame9.JPG in Resources */,
 				153B2A491E291BB000FF0211 /* frame7.JPG in Resources */,
+				15A2119C1E53366F006421B6 /* Happy-electronic-music.mp3 in Resources */,
 				153B2A471E291BB000FF0211 /* frame6.JPG in Resources */,
 				1BCA2F091DE874430037AF13 /* Assets.xcassets in Resources */,
 				153B2A511E291BB000FF0211 /* frame11.JPG in Resources */,
@@ -1574,11 +1608,14 @@
 				1BCA2F041DE874430037AF13 /* ViewController.swift in Sources */,
 				15AA0E961E39F65F009CF649 /* VideoAsset.swift in Sources */,
 				153B2A231E29177E00FF0211 /* Animation.swift in Sources */,
+				E87D2CE01E5B233400B85A70 /* VideoWriter.swift in Sources */,
 				153B2A2F1E29177E00FF0211 /* VideoBuilder.swift in Sources */,
 				153B2A251E29177E00FF0211 /* Asset.swift in Sources */,
+				E87D2CE31E5B234B00B85A70 /* ImageAnimator.swift in Sources */,
 				153B2A291E29177E00FF0211 /* Filter.swift in Sources */,
 				153B2A2B1E29177E00FF0211 /* TextOverlay.swift in Sources */,
 				153B2A2D1E29177E00FF0211 /* Transition.swift in Sources */,
+				E80E08C71E72FF7800031728 /* RenderSettings.swift in Sources */,
 				1BCA2F021DE874430037AF13 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1591,10 +1628,13 @@
 				153B2A281E29177E00FF0211 /* ImageAsset.swift in Sources */,
 				1BBA76881E72A02B00B2D37B /* VideoBuilderInteface.swift in Sources */,
 				15AA0E971E39F65F009CF649 /* VideoAsset.swift in Sources */,
+				E80E08CA1E72FFA900031728 /* VideoWriter.swift in Sources */,
 				153B2A261E29177E00FF0211 /* Asset.swift in Sources */,
 				153B2A301E29177E00FF0211 /* VideoBuilder.swift in Sources */,
+				E80E08C91E72FFA600031728 /* ImageAnimator.swift in Sources */,
 				15AA0E9E1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift in Sources */,
 				1BBA768B1E72A0D700B2D37B /* DDVideoHandler.swift in Sources */,
+				E80E08C81E72FFA400031728 /* RenderSettings.swift in Sources */,
 				153B2A2A1E29177E00FF0211 /* Filter.swift in Sources */,
 				153B2A2C1E29177E00FF0211 /* TextOverlay.swift in Sources */,
 				153B2A241E29177E00FF0211 /* Animation.swift in Sources */,
@@ -1608,6 +1648,11 @@
 			isa = PBXTargetDependency;
 			target = 1BCA2F171DE874CE0037AF13 /* VideoEditor */;
 			targetProxy = 1BCA2F1D1DE874CE0037AF13 /* PBXContainerItemProxy */;
+		};
+		E80E08B51E72F7D000031728 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImage_iOS;
+			targetProxy = E80E08B41E72F7D000031728 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
