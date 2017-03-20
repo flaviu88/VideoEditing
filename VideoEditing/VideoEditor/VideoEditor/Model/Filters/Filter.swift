@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Overlay {
+enum Filter {
     case motionBlur
     case crop
     case pixelate
