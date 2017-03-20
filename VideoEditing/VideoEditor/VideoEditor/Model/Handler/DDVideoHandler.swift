@@ -12,11 +12,11 @@ import AVFoundation
 
 class DDVideoHandler : VideoBuilderInteface {
     
-    func applyEffect(asset: Asset) -> AVAsset? {
-        return nil
+    func applyEffect(asset: Asset) -> Asset? {
+        return asset
     }
     
-    func createVideo(assets: [AVAsset]) -> String? {
+    func createVideo(assets: [Asset]) -> String? {
         let settings = RenderSettings()
                 let imageAnimator = ImageAnimator(renderSettings: settings)
                 imageAnimator.images = assets

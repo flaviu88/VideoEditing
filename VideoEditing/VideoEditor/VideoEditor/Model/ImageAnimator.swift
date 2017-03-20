@@ -19,9 +19,7 @@ class ImageAnimator {
     
     let settings: RenderSettings
     let videoWriter: VideoWriter
-    var images: [AVAsset]!
-    
-    var frameNum = 0
+    var images: [Asset]
     
     func saveToLibrary(videoURL: NSURL) {
         PHPhotoLibrary.requestAuthorization { status in
@@ -49,6 +47,7 @@ class ImageAnimator {
     init(renderSettings: RenderSettings) {
         settings = renderSettings
         videoWriter = VideoWriter(renderSettings: settings)
+        images = [Asset]()
     }
     
     func render() -> String {
@@ -72,6 +71,7 @@ class ImageAnimator {
     // This is the callback function for VideoWriter.render()
     func appendPixelBuffers(writer: VideoWriter) -> Bool {
         
+        var frameNum = 0
         let frameDuration = CMTimeMake(Int64(ImageAnimator.kTimescale / settings.fps), ImageAnimator.kTimescale)
         
         while !images.isEmpty {

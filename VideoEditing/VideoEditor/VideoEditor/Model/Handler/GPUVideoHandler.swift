@@ -12,7 +12,7 @@ import GPUImage
 
 class GPUVideoHandler : VideoBuilderInteface {
 
-    func applyEffect(asset: Asset) -> AVAsset? {
+    func applyEffect(asset: Asset) -> Asset? {
         //just for testing GPUImage integration
         let image = UIImage.init()
         let motionBlurFilter = MotionBlur()
@@ -20,7 +20,7 @@ class GPUVideoHandler : VideoBuilderInteface {
         return nil
     }
     
-    func createVideo(assets: [AVAsset]) -> String? {
+    func createVideo(assets: [Asset]) -> String? {
         return nil
     }
     
