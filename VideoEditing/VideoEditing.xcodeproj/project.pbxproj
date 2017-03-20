@@ -13,8 +13,8 @@
 		153B2A261E29177E00FF0211 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B2A1B1E29177E00FF0211 /* Asset.swift */; };
 		153B2A271E29177E00FF0211 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B2A1C1E29177E00FF0211 /* ImageAsset.swift */; };
 		153B2A281E29177E00FF0211 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B2A1C1E29177E00FF0211 /* ImageAsset.swift */; };
-		153B2A291E29177E00FF0211 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B2A1E1E29177E00FF0211 /* Overlay.swift */; };
-		153B2A2A1E29177E00FF0211 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B2A1E1E29177E00FF0211 /* Overlay.swift */; };
+		153B2A291E29177E00FF0211 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B2A1E1E29177E00FF0211 /* Filter.swift */; };
+		153B2A2A1E29177E00FF0211 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B2A1E1E29177E00FF0211 /* Filter.swift */; };
 		153B2A2B1E29177E00FF0211 /* TextOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B2A1F1E29177E00FF0211 /* TextOverlay.swift */; };
 		153B2A2C1E29177E00FF0211 /* TextOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B2A1F1E29177E00FF0211 /* TextOverlay.swift */; };
 		153B2A2D1E29177E00FF0211 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B2A211E29177E00FF0211 /* Transition.swift */; };
@@ -145,7 +145,7 @@
 		153B2A191E29177E00FF0211 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		153B2A1B1E29177E00FF0211 /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		153B2A1C1E29177E00FF0211 /* ImageAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAsset.swift; sourceTree = "<group>"; };
-		153B2A1E1E29177E00FF0211 /* Overlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
+		153B2A1E1E29177E00FF0211 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		153B2A1F1E29177E00FF0211 /* TextOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextOverlay.swift; sourceTree = "<group>"; };
 		153B2A211E29177E00FF0211 /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		153B2A221E29177E00FF0211 /* VideoBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoBuilder.swift; sourceTree = "<group>"; };
@@ -673,6 +673,7 @@
 				15AA0E981E39F6B9009CF649 /* Configuration */,
 				153B2A181E29177E00FF0211 /* Animations */,
 				153B2A1A1E29177E00FF0211 /* Assets */,
+				1BC4AA731E7FD677004A557C /* Filters */,
 				153B2A1D1E29177E00FF0211 /* Overlays */,
 				153B2A201E29177E00FF0211 /* Transitions */,
 				153B2A221E29177E00FF0211 /* VideoBuilder.swift */,
@@ -701,7 +702,6 @@
 		153B2A1D1E29177E00FF0211 /* Overlays */ = {
 			isa = PBXGroup;
 			children = (
-				153B2A1E1E29177E00FF0211 /* Overlay.swift */,
 				153B2A1F1E29177E00FF0211 /* TextOverlay.swift */,
 			);
 			path = Overlays;
@@ -1361,6 +1361,14 @@
 			path = Handler;
 			sourceTree = "<group>";
 		};
+		1BC4AA731E7FD677004A557C /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				153B2A1E1E29177E00FF0211 /* Filter.swift */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
 		1BCA2EF51DE874430037AF13 = {
 			isa = PBXGroup;
 			children = (
@@ -1603,8 +1611,8 @@
 				E87D2CE01E5B233400B85A70 /* VideoWriter.swift in Sources */,
 				153B2A2F1E29177E00FF0211 /* VideoBuilder.swift in Sources */,
 				153B2A251E29177E00FF0211 /* Asset.swift in Sources */,
-				153B2A291E29177E00FF0211 /* Overlay.swift in Sources */,
 				E87D2CE31E5B234B00B85A70 /* ImageAnimator.swift in Sources */,
+				153B2A291E29177E00FF0211 /* Filter.swift in Sources */,
 				153B2A2B1E29177E00FF0211 /* TextOverlay.swift in Sources */,
 				153B2A2D1E29177E00FF0211 /* Transition.swift in Sources */,
 				E80E08C71E72FF7800031728 /* RenderSettings.swift in Sources */,
@@ -1627,7 +1635,7 @@
 				15AA0E9E1E3A1FBB009CF649 /* VideoBuilderConfiguration.swift in Sources */,
 				1BBA768B1E72A0D700B2D37B /* DDVideoHandler.swift in Sources */,
 				E80E08C81E72FFA400031728 /* RenderSettings.swift in Sources */,
-				153B2A2A1E29177E00FF0211 /* Overlay.swift in Sources */,
+				153B2A2A1E29177E00FF0211 /* Filter.swift in Sources */,
 				153B2A2C1E29177E00FF0211 /* TextOverlay.swift in Sources */,
 				153B2A241E29177E00FF0211 /* Animation.swift in Sources */,
 			);
